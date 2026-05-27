@@ -1,257 +1,101 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 ---
-<Layout
-  title="5 Signs Your Website Is Hurting Your Business | Right Framework"
-  description="If your Seattle small business website has any of these 5 problems, you're losing customers every day. Find out what's wrong and how to fix it."
->
-
-<header class="blog-nav">
-  <div class="wrap blog-nav-inner">
-    <a href="/" class="logo" aria-label="Right Framework home">
-      <div class="logo-mark" aria-hidden="true">RF</div>
-      <span>Right Framework</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="/#services">Services</a>
-      <a href="/#work">Work</a>
-      <a href="/blog" class="active">Blog</a>
-      <a href="/#contact" class="btn btn-dark">Get a Quote</a>
-    </nav>
-  </div>
-</header>
-
-<div class="post-hero">
-  <div class="wrap">
-    <a href="/blog" class="back-link">&larr; Back to Blog</a>
-    <div class="post-hero-meta">
-      <span class="post-cat">Web Design</span>
-      <span class="post-read">6 min read</span>
-    </div>
-    <h1>5 Signs Your Website Is Hurting Your Business</h1>
-    <div class="post-author-row">
-      <div class="author-avatar">RF</div>
-      <div>
-        <strong>Right Framework Team</strong>
-        <span>April 10, 2026</span>
-      </div>
-    </div>
-  </div>
-</div>
-
+<Layout title="5 Signs Your Website Is Hurting Your Business | Right Framework" description="If your Seattle small business website has any of these 5 problems, you're losing customers every day. Find out what's wrong and how to fix it.">
+<header class="blog-nav"><div class="wrap blog-nav-inner"><a href="/" class="logo"><svg class="logo-img" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M8 8h10a4 4 0 0 1 0 8H8V8z" fill="#fff"/><path d="M8 16h7l5 8h-4l-4-6.5V24H8V16z" fill="#fff"/></svg><span>Right Framework</span></a><nav class="desktop-nav"><a href="/#services">Services</a><a href="/#process">Process</a><a href="/#work">Work</a><a href="/blog" class="active">Blog</a><a href="/#contact" class="btn btn-dark">Get a Quote</a></nav><button class="burger" id="blog-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div><div class="blog-drawer" id="blog-drawer" hidden><div class="wrap"><a href="/">Home</a><a href="/#services">Services</a><a href="/#work">Work</a><a href="/blog">Blog</a><a href="/#contact">Get a Quote</a></div></div></header>
+<script>
+  const burger = document.getElementById('blog-burger');
+  const drawer = document.getElementById('blog-drawer');
+  burger?.addEventListener('click', () => {
+    const open = drawer?.hidden === false;
+    if (drawer) drawer.hidden = open;
+    burger.setAttribute('aria-expanded', String(!open));
+  });
+</script>
+<div class="post-hero"><div class="wrap"><a href="/blog" class="back-link">&larr; Back to Blog</a><div class="post-hero-meta"><span class="post-cat">Web Design</span><span class="post-read">6 min read</span></div><h1>5 Signs Your Website Is Hurting Your Business</h1><div class="post-author-row"><div class="author-avatar">RF</div><div><strong>Right Framework Team</strong><span>April 10, 2026</span></div></div></div></div>
 <div class="post-layout wrap">
   <article class="post-content">
-
-    <p class="post-lead">A slow, outdated, or poorly designed website doesn't just underperform — it actively costs you customers. Every day your site has these problems, visitors are arriving, bouncing immediately, and calling your competitors. Here are the five biggest warning signs, and exactly how to fix them.</p>
-
+    <p class="post-lead">A bad website doesn't just underperform — it actively drives customers away. If your Seattle small business site has any of these five problems, you're losing customers every single day and handing them straight to your competitors.</p>
     <h2>Sign #1: It Takes More Than 3 Seconds to Load</h2>
-
     <h3>Why this matters</h3>
-    <p>Three seconds. That's all the patience the average website visitor has. According to Google's own research, 53% of mobile users abandon a site that takes longer than three seconds to load. For a local business in Seattle competing for service searches, that's not just a statistic — it's customers who found you, clicked your link, and left before seeing a single word you wrote.</p>
-    <p>Page speed is also a direct Google ranking factor. Slow sites rank lower in search results, which means fewer visitors to begin with. It's a double penalty: the people who do find you leave immediately, and fewer people find you in the first place. The compounding effect on your business is significant even if the individual load time difference seems trivial.</p>
-    <p>You can test your current speed for free using Google's PageSpeed Insights tool. Enter your URL and you'll get a score from 0 to 100, plus a detailed breakdown of exactly what's causing the slowdown. Anything below 70 on mobile should be considered a problem worth fixing urgently.</p>
-
+    <p>Google's research shows that 53% of mobile users abandon a site that takes longer than 3 seconds to load. That's more than half your potential customers clicking away before they've even seen your business. And that's before you factor in what slow speed does to your Google rankings — page speed is a direct ranking factor, meaning slow sites appear lower in search results to begin with.</p>
     <h3>How to fix it</h3>
-    <p>Most slow websites have a few common culprits that are entirely fixable:</p>
-    <ul>
-      <li><strong>Uncompressed images:</strong> A 4MB photo from your phone embedded directly on a page will tank load times. Convert images to WebP format and compress them — tools like Squoosh (free, browser-based) can reduce image file sizes by 80% with no visible quality loss</li>
-      <li><strong>Bloated page builders:</strong> Wix, Squarespace, and especially WordPress with heavy plugins load enormous amounts of JavaScript and CSS that users don't need. A custom-built or well-configured lightweight site can be 5–10x faster</li>
-      <li><strong>Cheap shared hosting:</strong> If you're on a $5/month shared hosting plan, your server response time alone will cause failures on performance tests. Upgrading to a modern host like Vercel, Netlify, or a quality managed WordPress host often solves half the problem</li>
-      <li><strong>No caching:</strong> Without caching, your server rebuilds every page from scratch on every visit. Proper caching serves pre-built pages instantly</li>
-    </ul>
-
+    <p>The most common culprits are uncompressed images, cheap shared hosting, and bloated website builders loaded with unnecessary plugins. Test your current speed at Google PageSpeed Insights (free). Target a score above 80 on mobile. Solutions include compressing all images to WebP format, upgrading to quality managed hosting, and eliminating unnecessary third-party scripts.</p>
     <h2>Sign #2: It Doesn't Work on Mobile</h2>
-
     <h3>The mobile-first reality</h3>
-    <p>Over 60% of all web searches now happen on mobile devices. For local service businesses, that number is even higher — people searching for a plumber, a hair salon, or a restaurant are almost always doing it from their phone, often while they're out and about. If your website requires pinching and zooming to read, has buttons too small to tap, or has content that overflows off the screen, you're losing more than half of your potential customers at the first interaction.</p>
-    <p>Google's indexing is now fully mobile-first. That means Google evaluates your website based on how it performs on mobile, and uses that assessment to determine your ranking — even for desktop searches. A site that looks fine on a laptop but breaks on a phone will rank poorly everywhere.</p>
-    <p>The simplest test: pull out your phone right now and visit your website. Try to use it as if you were a first-time visitor trying to find a phone number or fill out a contact form. If there's any friction at all, that friction is costing you customers every single day.</p>
-
+    <p>Over 60% of local searches in Seattle happen on smartphones. When someone searches "best contractor West Seattle" while standing in their kitchen, they're using their phone. If your website requires pinching and zooming, has text that's too small to read, or has buttons that are impossible to tap accurately — that person is gone within seconds. They will call your competitor instead.</p>
     <h3>How to fix it</h3>
-    <ul>
-      <li><strong>Responsive design:</strong> A properly built responsive website automatically adjusts its layout, font sizes, and touch targets based on the screen size. This is the standard — not an add-on feature</li>
-      <li><strong>Test on real devices:</strong> Don't just shrink your browser window and call it done. Test on actual iOS and Android devices, and use Google's Mobile-Friendly Test tool for a quick automated check</li>
-      <li><strong>Make tap targets large enough:</strong> Buttons and links should be at least 44px tall for comfortable finger tapping — not the tiny text links that require precise fingernail navigation</li>
-      <li><strong>Prioritize the phone number:</strong> On mobile, your phone number should be in a click-to-call format at the very top of the screen. This is the single most important conversion element on a local business mobile site</li>
-    </ul>
-
+    <p>Your website needs a fully responsive design that adapts to every screen size. This isn't an optional extra in 2026 — it's table stakes. Test your site right now by pulling it up on your phone and trying to actually use it as a customer would. If anything frustrates you, it's frustrating your customers too. Google's Mobile-Friendly Test tool gives you a free instant assessment.</p>
     <h2>Sign #3: The Design Looks Like It's From 2015</h2>
-
     <h3>First impressions and trust</h3>
-    <p>Stanford University's Credibility Research Lab has studied how consumers evaluate website trustworthiness, and the findings are striking: visual design is the number one factor people cite when explaining why they distrust a website. Not content, not reviews, not credentials — design. People make a subconscious judgment about whether a business is professional and credible within 50 milliseconds of landing on a page. That's before they've read a single word.</p>
-    <p>An outdated design signals to potential customers that you're behind the times, that you may not take your business seriously, or that the information on the site might not be current. It raises doubt. And in a market where customers have multiple options just a click away, doubt sends them elsewhere. The irony is that many businesses with exceptional service lose customers to competitors with inferior work simply because those competitors' websites look more professional.</p>
-
+    <p>Stanford University research has shown that 75% of people judge a company's credibility based on its website design. Your website is often the first impression a potential customer gets of your business — and that impression forms in under 100 milliseconds. An outdated design communicates that your business might be outdated too. For service businesses especially, where trust is everything, this is a conversion killer.</p>
     <h3>What modern design signals</h3>
-    <p>Current, effective web design for small businesses isn't about trends or flashiness. It's about clean typography, generous whitespace, high-quality photography, and clear hierarchy. Specific signals that date a website and damage credibility include stock photos of handshakes and lightbulbs, heavily textured backgrounds, centered justified text, gradients and drop shadows used everywhere, and cluttered layouts where everything competes for attention. Modern sites look clean, focused, and intentional. They make it easy to understand what you do and how to contact you within five seconds of arriving.</p>
-
+    <p>A modern website communicates competence, professionalism, and attention to detail. Clean typography, consistent spacing, high-quality photos, and a coherent color palette all work together to say "this business knows what it's doing." Outdated stock photos, clashing colors, tiny fonts, and cluttered layouts say the opposite — and customers make these judgments before they've read a single word.</p>
     <h2>Sign #4: There's No Clear Call to Action</h2>
-
     <h3>What happens without a CTA</h3>
-    <p>A call to action (CTA) is the specific thing you want a visitor to do — call you, fill out a form, book an appointment, request a quote. Without a clear, prominent CTA, visitors who are genuinely interested in your services will simply leave. Not because they didn't want to contact you, but because they weren't sure what to do next, or the process seemed unclear, or the button just wasn't prominent enough to notice.</p>
-    <p>This is one of the most fixable problems in web design, and one of the most common. Websites that were built to look good often have CTAs buried below the fold, designed in colors that blend into the background, or written in vague language like "Learn More" instead of something specific and action-oriented like "Get a Free Quote."</p>
-
+    <p>A visitor who doesn't know what to do next will do nothing. If your homepage doesn't have an obvious, prominent call to action — "Get a Free Quote," "Book a Consultation," "Call Us Now" — the majority of visitors will simply leave. They came to your site with intent, but without direction they'll go back to Google and click on someone else who makes it obvious how to take the next step.</p>
     <h3>How to fix it</h3>
-    <ul>
-      <li><strong>One primary CTA per page:</strong> Too many options cause paralysis. Every page should have one clear primary action you want visitors to take</li>
-      <li><strong>Above the fold:</strong> The CTA should be visible without scrolling on both desktop and mobile. Most visitors never scroll past the first screen</li>
-      <li><strong>Contrasting button color:</strong> Your CTA button needs to stand out from the rest of the page. If your site is white and blue, an orange or green button will draw the eye immediately</li>
-      <li><strong>Specific, benefit-driven language:</strong> "Get a Free Estimate" converts better than "Contact Us." "Book Your Appointment" converts better than "Schedule." Tell visitors exactly what they'll get and make it feel easy and low-commitment</li>
-      <li><strong>Repeat it:</strong> Place CTAs at the top of the page, after major content sections, and at the bottom. Don't assume visitors will scroll back up to find your contact button</li>
-    </ul>
-
+    <p>Every page on your website should have one primary CTA. It should be above the fold (visible without scrolling), use action-oriented language, and stand out visually from everything else on the page. The button color should contrast with the background. The copy should be specific: "Get My Free Estimate" converts better than "Contact Us." And on mobile, your phone number should be tap-to-call, placed in the header where it's impossible to miss.</p>
     <h2>Sign #5: You Can't Find It on Google</h2>
-
     <h3>Why organic search matters</h3>
-    <p>Search engine optimization isn't just for big companies. For local service businesses in Seattle, appearing on the first page of Google for relevant searches is the single highest-ROI marketing activity available. The customers who find you through organic search are actively looking for what you sell — they have high intent and convert at dramatically higher rates than customers reached through advertising or social media.</p>
-    <p>If you search for your core service plus your city — "electrician Seattle," "dog groomer Capitol Hill," "wedding photographer Bellevue" — and your business doesn't appear on page one, you're invisible to the majority of people who would hire you. Most people never click past the first page of results, and a significant portion never scroll below the first three or four listings.</p>
-
-    <h3>Quick SEO wins for local businesses</h3>
-    <ul>
-      <li><strong>Fix your title tags:</strong> Every page on your website should have a unique title tag following the formula: [Primary Keyword] in [City] | [Business Name]. This is one of the highest-impact on-page SEO changes you can make</li>
-      <li><strong>Claim and optimize your Google Business Profile:</strong> This is free and controls what appears in Google Maps and the local pack. Add photos, keep hours current, and collect reviews consistently</li>
-      <li><strong>Use local keywords naturally in your content:</strong> Mention your city, neighborhoods you serve, and specific services throughout your site content — not in a spammy way, but as a natural part of describing your business</li>
-      <li><strong>Get your NAP consistent everywhere:</strong> Your Name, Address, and Phone number must be identical across your website, Google Business Profile, Yelp, and every other directory listing</li>
-      <li><strong>Earn local backlinks:</strong> Get listed in the Seattle Chamber of Commerce directory, local business associations, and industry directories relevant to your trade</li>
-    </ul>
-
-    <p>If your website has even one of these problems, you're leaving money on the table every single day. Two or more, and the compounding effect is likely significant — customers who find you and immediately leave, customers who never find you at all, and customers who find your site and quietly decide not to trust you.</p>
-
-    <h3>Quick self-audit checklist</h3>
+    <p>If someone searches for the service you provide in your neighborhood and your website doesn't appear in the first page of results, you effectively don't exist online. 75% of searchers never go past the first page. For local searches like "HVAC repair Bellevue" or "catering company Kirkland WA," the businesses on page one are capturing nearly all the available leads. If you're not there, your competitors are.</p>
+    <h3>Quick SEO wins</h3>
+    <p>Even without a full SEO campaign, you can make significant improvements quickly. Update your homepage title tag to include your primary service and city. Claim and fully complete your Google Business Profile. Make sure your business name, address, and phone number are consistent everywhere online. Add your neighborhood and city naturally throughout your website copy. These changes alone often produce visible ranking improvements within 4–6 weeks.</p>
+    <h2>Your Quick Self-Audit Checklist</h2>
     <ul>
       <li>Does your site load in under 3 seconds on mobile? (Test at PageSpeed Insights)</li>
-      <li>Does it display correctly on both iPhone and Android without zooming?</li>
-      <li>Does the design look current, clean, and professional to someone who doesn't know you?</li>
-      <li>Is there a clear, prominent button or form telling visitors what to do next?</li>
-      <li>Does your business appear on page one of Google for your primary service + city?</li>
-      <li>Is your phone number visible and clickable at the top of every page on mobile?</li>
-      <li>Are there real photos of your work, team, or business — not generic stock photos?</li>
+      <li>Does every element work correctly on a smartphone?</li>
+      <li>Does your design look modern and professional compared to your top competitors?</li>
+      <li>Is there a clear, prominent CTA above the fold on your homepage?</li>
+      <li>Does your business appear on the first page of Google for your main service + city keyword?</li>
     </ul>
-
-    <p>At Right Framework, we help Seattle small businesses diagnose and fix exactly these problems. If you're not sure where your site stands, reach out for a free website audit — we'll tell you honestly what's working, what isn't, and what it would take to fix it.</p>
-
-    <!-- Like & Comments -->
+    <p>If your website has even one of these problems, every day that passes is a day you're handing customers to competitors who got their website right. The good news is every single one of these issues is fixable — usually faster and more affordably than most business owners expect.</p>
     <div class="engagement-section">
-      <div class="like-row">
-        <button class="like-btn" id="likeBtn" aria-label="Like this post">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-          <span id="likeCount">0</span> Likes
-        </button>
-      </div>
-
-      <div class="comments-section">
-        <h2>Comments</h2>
-        <div id="commentsList"></div>
-        <form id="commentForm" class="comment-form">
-          <h3>Leave a Comment</h3>
-          <input type="text" id="commentName" placeholder="Your name" required autocomplete="name" />
-          <textarea id="commentText" placeholder="Share your thoughts..." required rows="4"></textarea>
-          <button type="submit" class="submit-btn">Post Comment</button>
-        </form>
-      </div>
+      <div class="like-row"><button class="like-btn" id="likeBtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><span id="likeCount">0</span> Likes</button></div>
+      <div class="comments-section"><h2>Comments</h2><div id="commentsList"></div><form id="commentForm" class="comment-form"><h3>Leave a Comment</h3><input type="text" id="commentName" placeholder="Your name" required /><textarea id="commentText" placeholder="Share your thoughts..." required rows="4"></textarea><button type="submit" class="submit-btn">Post Comment</button></form></div>
     </div>
-
   </article>
-
   <aside class="post-sidebar">
-    <div class="sidebar-card cta-card">
-      <h3>Is your website costing you customers?</h3>
-      <p>We audit Seattle small business websites and fix exactly these problems. Free, no-obligation review.</p>
-      <a href="/#contact" class="btn btn-blue">Get a Free Audit</a>
-    </div>
-    <div class="sidebar-card">
-      <h4>More Articles</h4>
-      <ul class="sidebar-links">
-        <li><a href="/blog/trades-business-needs-website-2026">Why Every Trades Business Needs a Website</a></li>
-        <li><a href="/blog/rank-1-google-seattle">How to Rank #1 on Google in Seattle</a></li>
-        <li><a href="/blog/restaurant-food-business-needs-website">Why Your Restaurant Needs a Website in 2026</a></li>
-      </ul>
-    </div>
+    <div class="sidebar-card cta-card"><h3>Get a free website audit</h3><p>We'll review your site and tell you exactly what's holding it back. No charge, no obligation.</p><a href="/#contact" class="btn btn-blue">Request Audit</a></div>
+    <div class="sidebar-card"><h4>More Articles</h4><ul class="sidebar-links"><li><a href="/blog/rank-1-google-seattle">How to Rank #1 on Google in Seattle</a></li><li><a href="/blog/top-5-website-mistakes-seattle">Top 5 Website Mistakes Seattle Businesses Make</a></li><li><a href="/blog/trades-business-needs-website-2026">Why Every Trades Business Needs a Website</a></li></ul></div>
   </aside>
 </div>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/" class="footer-logo"><div class="logo-mark">RF</div><span>Right Framework</span></a>
-        <p class="footer-tagline">Seattle web design for Pacific Northwest small businesses.</p>
-        <p class="footer-company-name">Right Framework Digital Inc.</p>
-        <div class="footer-socials">
-          <a href="https://www.tiktok.com/@rightframework" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg></a>
-          <a href="https://www.instagram.com/rightframework" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col"><h4>Services</h4><a href="/#services">Website Design</a><a href="/#services">UI/UX Design</a><a href="/#services">SEO Optimization</a><a href="/#services">Website Redesign</a></div>
-      <div class="footer-col"><h4>Studio</h4><a href="/#process">Our Process</a><a href="/#work">Our Work</a><a href="/#contact">Contact</a></div>
-      <div class="footer-col"><h4>Support</h4><a href="/privacy-policy">Privacy Policy</a><a href="/#contact">Contact</a><a href="/refund-policy">Refund Policy</a></div>
-      <div class="footer-col"><h4>Pages</h4><a href="/">Home</a><a href="/blog">Blog</a><a href="/#contact">Contact</a></div>
-    </div>
-  </div>
-  <div class="footer-copyright"><div class="wrap"><p>Copyright &copy; 2026 Right Framework Digital Inc. | Designed by <a href="https://rightframework.tech" target="_blank" rel="noopener">Right Framework</a> | <a href="/privacy-policy">Privacy Policy</a></p></div></div>
-</footer>
-
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand"><a href="/" class="footer-logo"><svg class="logo-img" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M8 8h10a4 4 0 0 1 0 8H8V8z" fill="#fff"/><path d="M8 16h7l5 8h-4l-4-6.5V24H8V16z" fill="#fff"/></svg><span>Right Framework</span></a><p class="footer-tagline">Seattle web design for Pacific Northwest small businesses.</p><p class="footer-cn">Right Framework Digital Inc.</p><div class="footer-socials"><a href="https://www.tiktok.com/@rightframework" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg></a><a href="https://www.instagram.com/rightframework" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div><div class="footer-col"><h4>Services</h4><a href="/#services">Website Design</a><a href="/#services">SEO Optimization</a><a href="/#services">Website Redesign</a></div><div class="footer-col"><h4>Support</h4><a href="/#process">Our Process</a><a href="/#work">Our Work</a><a href="/#contact">Contact</a><a href="/privacy-policy">Privacy Policy</a></div><div class="footer-col"><h4>Pages</h4><a href="/">Home</a><a href="/blog">Blog</a></div></div></div><div class="footer-copyright"><div class="wrap"><p>Copyright &copy; 2026 Right Framework Digital Inc. | <a href="/privacy-policy">Privacy Policy</a></p></div></div></footer>
 </Layout>
-
 <script>
   const slug = '5-signs-website-hurting-business';
-  const likeKey = `likes_${slug}`;
-  const commentsKey = `comments_${slug}`;
-
-  let likes = parseInt(localStorage.getItem(likeKey) || '0');
+  let likes = parseInt(localStorage.getItem(`likes_${slug}`) || '0');
   const likeBtn = document.getElementById('likeBtn');
   const likeCount = document.getElementById('likeCount');
   if (likeCount) likeCount.textContent = String(likes);
-  likeBtn?.addEventListener('click', () => {
-    likes++;
-    localStorage.setItem(likeKey, String(likes));
-    if (likeCount) likeCount.textContent = String(likes);
-    likeBtn.classList.add('liked');
-  });
-
-  let comments = JSON.parse(localStorage.getItem(commentsKey) || '[]');
+  likeBtn?.addEventListener('click', () => { likes++; localStorage.setItem(`likes_${slug}`, String(likes)); if (likeCount) likeCount.textContent = String(likes); likeBtn.classList.add('liked'); });
+  let comments = JSON.parse(localStorage.getItem(`comments_${slug}`) || '[]');
   const commentsList = document.getElementById('commentsList');
   const commentForm = document.getElementById('commentForm');
-
-  function renderComments() {
-    if (!commentsList) return;
-    commentsList.innerHTML = comments.length === 0
-      ? '<p class="no-comments">No comments yet. Be the first!</p>'
-      : comments.map(c => `<div class="comment-item"><div class="comment-meta"><strong>${c.name}</strong><span>${c.date}</span></div><p>${c.text}</p></div>`).join('');
-  }
+  function renderComments() { if (!commentsList) return; commentsList.innerHTML = comments.length === 0 ? '<p class="no-comments">No comments yet. Be the first!</p>' : comments.map((c) => `<div class="comment-item"><div class="comment-meta"><strong>${c.name}</strong><span>${c.date}</span></div><p>${c.text}</p></div>`).join(''); }
   renderComments();
-
-  commentForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const nameEl = document.getElementById('commentName');
-    const textEl = document.getElementById('commentText');
-    const name = (nameEl as HTMLInputElement).value.trim();
-    const text = (textEl as HTMLTextAreaElement).value.trim();
-    if (!name || !text) return;
-    comments.push({ name, text, date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) });
-    localStorage.setItem(commentsKey, JSON.stringify(comments));
-    renderComments();
-    (nameEl as HTMLInputElement).value = '';
-    (textEl as HTMLTextAreaElement).value = '';
-  });
+  commentForm?.addEventListener('submit', (e) => { e.preventDefault(); const n = document.getElementById('commentName'); const t = document.getElementById('commentText'); const name = n.value.trim(); const text = t.value.trim(); if (!name || !text) return; comments.push({ name, text, date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) }); localStorage.setItem(`comments_${slug}`, JSON.stringify(comments)); renderComments(); n.value = ''; t.value = ''; });
 </script>
-
 <style>
-  :root { --blue: #1a56db; --blue-dim: #eff6ff; }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 6.5vw, 80px); }
   .blog-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
   .blog-nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
   .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
   .logo span { font-size: 15px; font-weight: 600; color: var(--ink); }
+  .logo-img { width: 32px; height: 32px; object-fit: contain; flex-shrink: 0; border-radius: 6px; }
   .logo-mark { width: 32px; height: 32px; background: var(--ink); color: #fff; font-size: 11px; font-weight: 700; border-radius: 8px; display: flex; align-items: center; justify-content: center; letter-spacing: 0.04em; }
-  .blog-nav nav { display: flex; align-items: center; gap: 28px; }
-  .blog-nav nav a { font-size: 14px; color: var(--ink-3); text-decoration: none; transition: color 0.13s; }
-  .blog-nav nav a:hover, .blog-nav nav a.active { color: var(--ink); }
+  .desktop-nav { display: flex; align-items: center; gap: 28px; }
+  .desktop-nav a { font-size: 14px; color: var(--ink-3); text-decoration: none; transition: color 0.13s; }
+  .desktop-nav a:hover, .desktop-nav a.active { color: var(--ink); }
+  .burger { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; width: 36px; height: 36px; }
+  .burger span { display: block; height: 2px; background: var(--ink); border-radius: 2px; transition: all 0.2s; }
+  .blog-drawer { background: #fff; border-top: 1px solid var(--line); padding: 16px 0 24px; }
+  .blog-drawer .wrap { display: flex; flex-direction: column; gap: 4px; }
+  .blog-drawer a { font-size: 15px; font-weight: 500; color: var(--ink-2); padding: 10px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
   .btn { display: inline-flex; align-items: center; font-weight: 600; border-radius: 10px; cursor: pointer; text-decoration: none; }
-  .btn-dark { background: var(--ink); color: #fff; font-size: 13.5px; padding: 9px 20px; transition: background 0.15s; }
-  .btn-dark:hover { background: #333; color: #fff; }
-  .btn-blue { background: var(--blue); color: #fff; font-size: 14px; padding: 11px 22px; transition: opacity 0.15s; }
+  .btn-dark { background: var(--ink); color: #fff; font-size: 13.5px; padding: 9px 20px; }
+  .btn-blue { background: #0369a1; color: #fff; font-size: 14px; padding: 11px 22px; transition: opacity 0.15s; }
   .btn-blue:hover { opacity: 0.88; }
-
   .post-hero { background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 55%, #0891b2 100%); padding: 72px 0 64px; color: #fff; }
   .back-link { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.7); font-size: 14px; text-decoration: none; margin-bottom: 24px; transition: color 0.13s; }
   .back-link:hover { color: #fff; }
@@ -260,28 +104,22 @@ import Layout from '../../layouts/Layout.astro';
   .post-read { font-size: 13px; color: rgba(255,255,255,0.7); }
   .post-hero h1 { font-size: clamp(24px, 3.5vw, 40px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 24px; max-width: 760px; }
   .post-author-row { display: flex; align-items: center; gap: 12px; }
-  .author-avatar { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.2); color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .author-avatar { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.2); color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
   .post-author-row strong { display: block; font-size: 14px; color: #fff; }
   .post-author-row span { font-size: 13px; color: rgba(255,255,255,0.65); }
-
-  .post-layout { display: grid; grid-template-columns: 1fr 320px; gap: 56px; padding-top: 64px; padding-bottom: 96px; align-items: flex-start; }
+  .post-layout { display: grid; grid-template-columns: 1fr 300px; gap: 56px; padding-top: 64px; padding-bottom: 96px; align-items: flex-start; }
   .post-content { min-width: 0; }
-  .post-lead { font-size: 18px; color: var(--ink-2); line-height: 1.75; margin-bottom: 36px; font-weight: 400; }
+  .post-lead { font-size: 18px; color: var(--ink-2); line-height: 1.75; margin-bottom: 36px; }
   .post-content h2 { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); margin: 44px 0 16px; }
   .post-content h3 { font-size: 18px; font-weight: 600; color: var(--ink); margin: 28px 0 12px; }
   .post-content p { font-size: 16px; color: var(--ink-2); line-height: 1.8; margin-bottom: 20px; }
   .post-content ul { padding-left: 0; margin-bottom: 20px; list-style: none; }
   .post-content ul li { font-size: 16px; color: var(--ink-2); line-height: 1.75; padding: 6px 0 6px 24px; position: relative; }
-  .post-content ul li::before { content: '→'; position: absolute; left: 0; color: var(--blue); font-weight: 600; }
-
+  .post-content ul li::before { content: '→'; position: absolute; left: 0; color: #0369a1; font-weight: 600; }
   .engagement-section { margin-top: 56px; border-top: 1px solid var(--line); padding-top: 40px; }
   .like-row { margin-bottom: 40px; }
   .like-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 100px; border: 1.5px solid var(--line); background: var(--white); color: var(--ink-3); font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
-  .like-btn:hover { border-color: #e11d48; color: #e11d48; }
-  .like-btn.liked { background: #fff1f3; border-color: #e11d48; color: #e11d48; }
-  .like-btn svg { transition: transform 0.2s; }
-  .like-btn.liked svg { transform: scale(1.2); }
-
+  .like-btn:hover, .like-btn.liked { border-color: #e11d48; color: #e11d48; background: #fff1f3; }
   .comments-section h2 { font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 24px; }
   .comment-item { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 24px; margin-bottom: 16px; }
   .comment-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
@@ -289,15 +127,13 @@ import Layout from '../../layouts/Layout.astro';
   .comment-meta span { font-size: 12.5px; color: var(--ink-4); }
   .comment-item p { font-size: 15px; color: var(--ink-2); line-height: 1.7; margin: 0; }
   .no-comments { font-size: 15px; color: var(--ink-4); padding: 20px 0; }
-
   .comment-form { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; margin-top: 24px; }
   .comment-form h3 { font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 20px; }
   .comment-form input, .comment-form textarea { width: 100%; padding: 12px 16px; border: 1.5px solid var(--line); border-radius: 10px; font-size: 15px; font-family: inherit; color: var(--ink); background: var(--white); margin-bottom: 14px; box-sizing: border-box; transition: border-color 0.15s; }
-  .comment-form input:focus, .comment-form textarea:focus { outline: none; border-color: var(--blue); }
+  .comment-form input:focus, .comment-form textarea:focus { outline: none; border-color: #0369a1; }
   .comment-form textarea { resize: vertical; min-height: 110px; }
-  .submit-btn { background: var(--ink); color: #fff; font-size: 14px; font-weight: 600; padding: 12px 24px; border: none; border-radius: 10px; cursor: pointer; transition: background 0.15s; }
+  .submit-btn { background: var(--ink); color: #fff; font-size: 14px; font-weight: 600; padding: 12px 24px; border: none; border-radius: 10px; cursor: pointer; }
   .submit-btn:hover { background: #333; }
-
   .post-sidebar { display: flex; flex-direction: column; gap: 24px; position: sticky; top: 80px; }
   .sidebar-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px; }
   .cta-card { background: var(--ink); border-color: var(--ink); }
@@ -306,18 +142,17 @@ import Layout from '../../layouts/Layout.astro';
   .sidebar-card h4 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-4); margin-bottom: 16px; }
   .sidebar-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
   .sidebar-links li a { font-size: 14px; color: var(--ink-2); text-decoration: none; line-height: 1.5; transition: color 0.13s; }
-  .sidebar-links li a:hover { color: var(--blue); }
-
+  .sidebar-links li a:hover { color: #0369a1; }
   .site-footer { background: #f5f5f5; border-top: 1px solid #e4e4e4; }
-  .footer-top { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr; gap: 32px; padding-top: 64px; padding-bottom: 48px; align-items: flex-start; }
+  .footer-top { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr; gap: 32px; padding-top: 64px; padding-bottom: 48px; }
   .footer-brand { max-width: 280px; }
   .footer-logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 12px; }
   .footer-logo span { font-size: 15px; font-weight: 600; color: var(--ink); }
-  .footer-tagline { font-size: 13px; color: var(--ink-3); line-height: 1.65; margin: 0 0 8px; }
-  .footer-company-name { font-size: 12.5px; color: var(--ink-4); margin: 0 0 16px; }
+  .footer-tagline { font-size: 13px; color: var(--ink-3); line-height: 1.65; margin: 0 0 6px; }
+  .footer-cn { font-size: 12.5px; color: var(--ink-4); margin: 0 0 16px; }
   .footer-socials { display: flex; gap: 8px; }
-  .footer-socials a { width: 34px; height: 34px; border-radius: 8px; background: #fff; border: 1px solid #e4e4e4; color: #555; display: flex; align-items: center; justify-content: center; transition: color 0.13s, border-color 0.13s; text-decoration: none; }
-  .footer-socials a:hover { color: var(--ink); border-color: #aaa; }
+  .footer-socials a { width: 34px; height: 34px; border-radius: 8px; background: #fff; border: 1px solid #e4e4e4; color: #555; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: color 0.13s; }
+  .footer-socials a:hover { color: var(--ink); }
   .footer-col { display: flex; flex-direction: column; gap: 10px; }
   .footer-col h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-4); margin-bottom: 4px; }
   .footer-col a { font-size: 13.5px; color: var(--ink-3); text-decoration: none; transition: color 0.13s; }
@@ -325,16 +160,6 @@ import Layout from '../../layouts/Layout.astro';
   .footer-copyright { background: #ebebeb; border-top: 1px solid #e0e0e0; padding: 14px 0; }
   .footer-copyright p { font-size: 12px; color: #888; text-align: center; }
   .footer-copyright a { color: #666; text-decoration: none; }
-  .footer-copyright a:hover { color: var(--ink); }
-
-  @media (max-width: 1024px) {
-    .post-layout { grid-template-columns: 1fr; }
-    .post-sidebar { position: static; }
-    .footer-top { grid-template-columns: 1fr 1fr; }
-    .footer-brand { grid-column: 1 / -1; }
-  }
-  @media (max-width: 640px) {
-    .blog-nav nav a:not(.btn) { display: none; }
-    .footer-top { grid-template-columns: 1fr; }
-  }
+  @media (max-width: 1024px) { .post-layout { grid-template-columns: 1fr; } .post-sidebar { position: static; } .footer-top { grid-template-columns: 1fr 1fr; } .footer-brand { grid-column: 1/-1; } }
+  @media (max-width: 640px) { .desktop-nav { display: none; } .burger { display: flex; } .footer-top { grid-template-columns: 1fr; } }
 </style>

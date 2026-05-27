@@ -8,14 +8,16 @@ import Layout from '../layouts/Layout.astro';
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/" class="logo" aria-label="Right Framework">
-      <div class="logo-mark" aria-hidden="true">RF</div>
+      <svg class="logo-img" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M8 8h10a4 4 0 0 1 0 8H8V8z" fill="#fff"/><path d="M8 16h7l5 8h-4l-4-6.5V24H8V16z" fill="#fff"/></svg>
       <span>Right Framework</span>
     </a>
     <ul class="nav-links" role="list" aria-label="Main navigation">
       <li><a href="#services">Services</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="/blog">Blog</a></li>
       <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+      <li><a href="tel:+13014335323" class="nav-call" aria-label="Call us"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span>
@@ -26,6 +28,7 @@ import Layout from '../layouts/Layout.astro';
       <a href="#services">Services</a>
       <a href="#process">Process</a>
       <a href="#work">Work</a>
+      <a href="/blog">Blog</a>
       <a href="#contact">Get in touch</a>
     </div>
   </div>
@@ -397,24 +400,24 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </article>
 
-      <!-- Retail & Restaurants: Momon Grill -->
+      <!-- Retail & Restaurants: Momo n Grill -->
       <article class="work-card" data-category="retail">
         <div class="work-preview">
           <div class="iframe-wrapper">
             <iframe
               src="https://momongrill.ca"
-              title="Momon Grill website preview"
+              title="Momo n Grill website preview"
               loading="lazy"
               scrolling="no"
               tabindex="-1"
               aria-hidden="true"
             ></iframe>
           </div>
-          <a href="https://momongrill.ca" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Momon Grill website"></a>
+          <a href="https://momongrill.ca" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Momo n Grill website"></a>
         </div>
         <div class="work-info">
           <span class="work-tag">Retail &amp; Restaurants</span>
-          <h3>Momon Grill</h3>
+          <h3>Momo n Grill</h3>
           <p>Restaurant website built to attract local diners and drive online orders. Clean, appetizing design optimized for local search visibility.</p>
           <a href="https://momongrill.ca" target="_blank" rel="noopener" class="btn btn-blue work-visit-btn">Visit Site &rarr;</a>
         </div>
@@ -424,14 +427,13 @@ import Layout from '../layouts/Layout.astro';
       <article class="work-card" data-category="ecommerce">
         <div class="work-preview">
           <div class="iframe-wrapper">
-            <iframe
-              src="https://www.mokshacandles.com"
-              title="Moksha Candles website preview"
+            <img
+              src="/image.png"
+              alt="Moksha Candles website preview"
               loading="lazy"
-              scrolling="no"
-              tabindex="-1"
               aria-hidden="true"
-            ></iframe>
+              class="work-screenshot"
+            />
           </div>
           <a href="https://www.mokshacandles.com" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Moksha Candles website"></a>
         </div>
@@ -552,7 +554,7 @@ import Layout from '../layouts/Layout.astro';
           <footer class="review-author">
             <div class="review-avatar" aria-hidden="true">MG</div>
             <div>
-              <strong>Owner, Momon Grill</strong>
+              <strong>Owner, Momo n Grill</strong>
               <span><a href="https://momongrill.ca" target="_blank" rel="noopener">momongrill.ca</a></span>
             </div>
           </footer>
@@ -605,6 +607,10 @@ import Layout from '../layouts/Layout.astro';
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span>hello@rightframework.co</span>
           </div>
+          <div class="contact-row">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+13014335323" style="color:inherit;text-decoration:none;">(301) 433-5323</a>
+          </div>
         </div>
       </div>
       <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
@@ -646,7 +652,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Col 1: Brand -->
       <div class="footer-brand">
         <a href="/" class="logo" aria-label="Right Framework">
-          <div class="logo-mark" aria-hidden="true">RF</div>
+          <svg class="logo-img" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M8 8h10a4 4 0 0 1 0 8H8V8z" fill="#fff"/><path d="M8 16h7l5 8h-4l-4-6.5V24H8V16z" fill="#fff"/></svg>
           <span>Right Framework</span>
         </a>
         <p class="footer-tagline">Seattle web design for Pacific Northwest small businesses.</p>
@@ -677,20 +683,13 @@ import Layout from '../layouts/Layout.astro';
         <a href="#services">Website Redesign</a>
       </div>
 
-      <!-- Col 3: Studio (original) -->
+      <!-- Col 3: Support -->
       <div class="footer-col">
-        <h4>Studio</h4>
+        <h4>Support</h4>
         <a href="#process">Our Process</a>
         <a href="#work">Our Work</a>
         <a href="#contact">Contact</a>
-      </div>
-
-      <!-- Col 4: Support (new) -->
-      <div class="footer-col">
-        <h4>Support</h4>
         <a href="/privacy-policy">Privacy Policy</a>
-        <a href="#contact">Contact</a>
-        <a href="/refund-policy">Refund and Returns Policy</a>
       </div>
 
       <!-- Col 5: Pages (new) -->
@@ -745,6 +744,12 @@ import Layout from '../layouts/Layout.astro';
   color: var(--ink);
   letter-spacing: -0.02em;
 }
+.logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
 .logo-mark {
   width: 30px;
   height: 30px;
@@ -782,6 +787,19 @@ import Layout from '../layouts/Layout.astro';
   padding: 7px 16px !important;
 }
 .nav-cta:hover { background: #000 !important; }
+.nav-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  color: var(--ink);
+  transition: background 0.15s, border-color 0.15s;
+  margin-left: 4px;
+}
+.nav-call:hover { background: var(--surface); border-color: var(--ink-4); }
 
 .burger {
   display: none;
@@ -1206,6 +1224,13 @@ import Layout from '../layouts/Layout.astro';
   transform: scale(0.375);
   pointer-events: none;
   display: block;
+}
+.work-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  pointer-events: none;
 }
 .preview-overlay {
   position: absolute;
