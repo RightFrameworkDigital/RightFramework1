@@ -1,0 +1,1752 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="Right Framework">
+      <div class="logo-mark" aria-hidden="true">RF</div>
+      <span>Right Framework</span>
+    </a>
+    <ul class="nav-links" role="list" aria-label="Main navigation">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-drawer" id="drawer" hidden>
+    <div class="wrap">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="kicker">Seattle Web Studio</p>
+        <h1>We build websites<br><em>that bring customers.</em></h1>
+        <p class="hero-sub">Right Framework helps small businesses across the Pacific Northwest get more visibility, more traffic, and more customers — with modern, SEO-optimized websites built to perform.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-blue btn-lg">Get a free consultation</a>
+          <a href="#work" class="btn btn-ghost btn-lg">See our work</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-frame">
+          <img
+            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop"
+            alt=""
+            width="600"
+            height="480"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="float float-a">
+          <strong>+142%</strong>
+          <span>Organic traffic</span>
+        </div>
+        <div class="float float-b">
+          <strong>1.2s</strong>
+          <span>Avg. load time</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="wrap">
+    <div class="stats-row">
+      <div class="stat">
+        <strong>50+</strong>
+        <span>Projects delivered</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>3×</strong>
+        <span>Avg. traffic growth</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>Seattle</strong>
+        <span>Based &amp; operated</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>Since 2020</strong>
+        <span>Serving clients</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PULL QUOTE -->
+<section class="pullquote-section">
+  <div class="wrap">
+    <blockquote class="pullquote">
+      <p>Most small business websites in Seattle are invisible on Google and fail to convert the visitors they do get.</p>
+      <p class="pullquote-end">We fix both.</p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- VALUE PROPS -->
+<section class="props-section">
+  <div class="wrap">
+    <div class="props-grid">
+      <div class="prop">
+        <div class="prop-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        </div>
+        <h3>Modern Design</h3>
+        <p>Purposeful interfaces that guide visitors toward action — not just something that looks nice.</p>
+      </div>
+      <div class="prop">
+        <div class="prop-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <h3>SEO Built In</h3>
+        <p>Technical SEO, semantic markup, and local keyword targeting baked into every project from day one.</p>
+      </div>
+      <div class="prop">
+        <div class="prop-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg>
+        </div>
+        <h3>Mobile-First</h3>
+        <p>60% of searches happen on phones. We build for that reality — fast and pixel-perfect everywhere.</p>
+      </div>
+      <div class="prop">
+        <div class="prop-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h3>Converts Visitors</h3>
+        <p>Layouts structured around real customer psychology — turning traffic into calls and leads.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="label">What we do</p>
+      <h2>Services for Seattle small businesses</h2>
+    </header>
+
+    <div class="svc-list">
+      <article class="svc-row">
+        <div class="svc-label">
+          <span class="svc-num">01</span>
+          <h3>Website Design &amp; Development</h3>
+        </div>
+        <div class="svc-body">
+          <p>Custom websites for Seattle small businesses — built fast and clean. Not a template, not a page builder. A real website designed around your customers and optimized to rank.</p>
+          <ul class="svc-features">
+            <li>Custom design tailored to your brand</li>
+            <li>Responsive, mobile-first build</li>
+            <li>Performance-optimized code</li>
+            <li>Content management ready</li>
+          </ul>
+        </div>
+      </article>
+      <article class="svc-row">
+        <div class="svc-label">
+          <span class="svc-num">02</span>
+          <h3>UI/UX Design</h3>
+        </div>
+        <div class="svc-body">
+          <p>Good UX means fewer questions and more calls. We map how your customers actually navigate and design around that — reducing friction, improving clarity, and making the next step obvious.</p>
+          <ul class="svc-features">
+            <li>User flow mapping</li>
+            <li>Wireframes and prototypes</li>
+            <li>Conversion rate optimization</li>
+            <li>Accessibility compliance</li>
+          </ul>
+        </div>
+      </article>
+      <article class="svc-row">
+        <div class="svc-label">
+          <span class="svc-num">03</span>
+          <h3>SEO-Optimized Development</h3>
+        </div>
+        <div class="svc-body">
+          <p>Most agencies add SEO after the fact. We build with it in mind from day one — technical markup, structured data, local keyword targeting, and Core Web Vitals all handled before launch.</p>
+          <ul class="svc-features">
+            <li>Technical SEO foundation</li>
+            <li>On-page keyword integration</li>
+            <li>Local SEO for Seattle &amp; Pacific NW</li>
+            <li>Google Search Console setup</li>
+          </ul>
+        </div>
+      </article>
+      <article class="svc-row">
+        <div class="svc-label">
+          <span class="svc-num">04</span>
+          <h3>Redesign &amp; Performance</h3>
+        </div>
+        <div class="svc-body">
+          <p>Your existing site isn't broken — it's just not working. We audit what's underperforming and fix it: speed, rankings, structure, conversions. Real improvements without starting from zero.</p>
+          <ul class="svc-features">
+            <li>Full site audit and analysis</li>
+            <li>Speed and Core Web Vitals fixes</li>
+            <li>SEO recovery and improvement</li>
+            <li>UX redesign and modernization</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section" id="process">
+  <div class="wrap">
+    <header class="sec-head sec-head-inv">
+      <p class="label label-inv">How we work</p>
+      <h2>Clear process.<br>No surprises.</h2>
+    </header>
+    <div class="process-grid">
+      <div class="process-card">
+        <span class="process-n" aria-hidden="true">1</span>
+        <h3>Discovery</h3>
+        <p>We learn your business, your customers, and what winning looks like for you. Then we dig into your Seattle market — competitor research, keyword mapping, the real opportunities.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-n" aria-hidden="true">2</span>
+        <h3>Design &amp; Build</h3>
+        <p>Every design and code decision is made with SEO and conversions already in mind. You review at every stage. Nothing ships without your sign-off.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-n" aria-hidden="true">3</span>
+        <h3>Launch &amp; Grow</h3>
+        <p>We submit to Google, wire up analytics, and watch the first few weeks closely. Your investment should start working immediately — and we make sure it does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-left">
+        <p class="label">Why Right Framework</p>
+        <h2>We know Seattle small business better than anyone</h2>
+        <p>We're not a marketplace, not an offshore shop, and not a generalist agency. We work with a small number of Pacific Northwest businesses at a time so we can actually pay attention.</p>
+        <p>That means you deal directly with the people building your site, and every decision is made with your specific market and customers in mind.</p>
+        <a href="#contact" class="btn btn-blue btn-lg" style="margin-top: 8px;">Start a conversation</a>
+      </div>
+      <div class="why-right">
+        <div class="why-item">
+          <div class="why-check" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <strong>Direct access, no account managers</strong>
+            <p>You work with the people writing your code, not a go-between.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-check" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <strong>Pacific Northwest only</strong>
+            <p>We focus on Washington State businesses. That specificity shows in the results.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-check" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <strong>SEO and design aren't two separate things</strong>
+            <p>We treat them as the same problem. Most studios don't.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-check" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <strong>Measured by your results, not deliverables</strong>
+            <p>We track rankings, leads, and load times — not just "launched."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work-section" id="work">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="label">Selected work</p>
+      <h2>Recent Pacific Northwest projects</h2>
+    </header>
+
+    <!-- Filter tabs -->
+    <div class="work-filters" role="tablist" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+      <button class="filter-btn" data-filter="construction" role="tab" aria-selected="false">Construction &amp; Trades</button>
+      <button class="filter-btn" data-filter="health" role="tab" aria-selected="false">Health &amp; Wellness</button>
+      <button class="filter-btn" data-filter="retail" role="tab" aria-selected="false">Retail &amp; Restaurants</button>
+      <button class="filter-btn" data-filter="ecommerce" role="tab" aria-selected="false">E-Commerce</button>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+      <!-- Construction & Trades: Prime View Glass -->
+      <article class="work-card" data-category="construction">
+        <div class="work-preview">
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://www.primeviewglass.com"
+              title="Prime View Glass website preview"
+              loading="lazy"
+              scrolling="no"
+              tabindex="-1"
+              aria-hidden="true"
+            ></iframe>
+          </div>
+          <a href="https://www.primeviewglass.com" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Prime View Glass website"></a>
+        </div>
+        <div class="work-info">
+          <span class="work-tag">Construction &amp; Trades</span>
+          <h3>Prime View Glass</h3>
+          <p>Glass railing installation for residential and commercial clients in Seattle, WA. Conversion-first site built to turn local search traffic into booked estimates.</p>
+          <a href="https://www.primeviewglass.com" target="_blank" rel="noopener" class="btn btn-blue work-visit-btn">Visit Site &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Construction & Trades: Asian Contractors -->
+      <article class="work-card" data-category="construction">
+        <div class="work-preview">
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://www.asiancontractors.ca"
+              title="Asian Contractors website preview"
+              loading="lazy"
+              scrolling="no"
+              tabindex="-1"
+              aria-hidden="true"
+            ></iframe>
+          </div>
+          <a href="https://www.asiancontractors.ca" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Asian Contractors website"></a>
+        </div>
+        <div class="work-info">
+          <span class="work-tag">Construction &amp; Trades</span>
+          <h3>Asian Contractors</h3>
+          <p>General contracting company serving the Vancouver/BC market. Built for local SEO and lead generation to bring in consistent inquiries.</p>
+          <a href="https://www.asiancontractors.ca" target="_blank" rel="noopener" class="btn btn-blue work-visit-btn">Visit Site &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Health & Wellness: Coming Soon -->
+      <article class="work-card work-card-soon" data-category="health">
+        <div class="work-soon-body">
+          <div class="soon-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="work-tag">Health &amp; Wellness</span>
+          <h3>Project Coming Soon</h3>
+          <p>We're currently working on an exciting Health &amp; Wellness project. Check back soon to see the full case study.</p>
+          <span class="soon-badge">Coming Soon</span>
+        </div>
+      </article>
+
+      <!-- Retail & Restaurants: Old Durbar -->
+      <article class="work-card" data-category="retail">
+        <div class="work-preview">
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://www.olddurbar.ca"
+              title="Old Durbar website preview"
+              loading="lazy"
+              scrolling="no"
+              tabindex="-1"
+              aria-hidden="true"
+            ></iframe>
+          </div>
+          <a href="https://www.olddurbar.ca" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Old Durbar website"></a>
+        </div>
+        <div class="work-info">
+          <span class="work-tag">Retail &amp; Restaurants</span>
+          <h3>Old Durbar</h3>
+          <p>Authentic Nepali restaurant website. Location-targeted design to capture local search and drive foot traffic and reservations.</p>
+          <a href="https://www.olddurbar.ca" target="_blank" rel="noopener" class="btn btn-blue work-visit-btn">Visit Site &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Retail & Restaurants: Momon Grill -->
+      <article class="work-card" data-category="retail">
+        <div class="work-preview">
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://momongrill.ca"
+              title="Momon Grill website preview"
+              loading="lazy"
+              scrolling="no"
+              tabindex="-1"
+              aria-hidden="true"
+            ></iframe>
+          </div>
+          <a href="https://momongrill.ca" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Momon Grill website"></a>
+        </div>
+        <div class="work-info">
+          <span class="work-tag">Retail &amp; Restaurants</span>
+          <h3>Momon Grill</h3>
+          <p>Restaurant website built to attract local diners and drive online orders. Clean, appetizing design optimized for local search visibility.</p>
+          <a href="https://momongrill.ca" target="_blank" rel="noopener" class="btn btn-blue work-visit-btn">Visit Site &rarr;</a>
+        </div>
+      </article>
+
+      <!-- E-Commerce: Moksha Candles -->
+      <article class="work-card" data-category="ecommerce">
+        <div class="work-preview">
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://www.mokshacandles.com"
+              title="Moksha Candles website preview"
+              loading="lazy"
+              scrolling="no"
+              tabindex="-1"
+              aria-hidden="true"
+            ></iframe>
+          </div>
+          <a href="https://www.mokshacandles.com" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Moksha Candles website"></a>
+        </div>
+        <div class="work-info">
+          <span class="work-tag">E-Commerce</span>
+          <h3>Moksha Candles</h3>
+          <p>E-commerce store for a handcrafted candle brand. Premium product-forward design built to convert browsers into buyers.</p>
+          <a href="https://www.mokshacandles.com" target="_blank" rel="noopener" class="btn btn-blue work-visit-btn">Visit Site &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="label">Client reviews</p>
+      <h2>What our clients say</h2>
+    </header>
+
+    <div class="reviews-slider" id="reviewsSlider" aria-label="Client reviews carousel">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote>
+            <p>"Right Framework completely transformed our online presence. We went from barely showing up on Google to getting consistent calls from new customers every week. Best investment we've made."</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-avatar" aria-hidden="true">PV</div>
+            <div>
+              <strong>Owner, Primeview Glass</strong>
+              <span><a href="https://www.primeviewglass.com" target="_blank" rel="noopener">primeviewglass.com</a></span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote>
+            <p>"The team at Right Framework understood our business right away. The new site looks professional, loads fast, and we're getting way more inquiries from local clients than we ever did before."</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-avatar" aria-hidden="true">AC</div>
+            <div>
+              <strong>Owner, Asian Contractors</strong>
+              <span><a href="https://www.asiancontractors.ca" target="_blank" rel="noopener">asiancontractors.ca</a></span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote>
+            <p>"Our candle brand needed a website that felt as premium as our products. Right Framework nailed the aesthetic and the site has been a huge driver of online sales since launch."</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-avatar" aria-hidden="true">MC</div>
+            <div>
+              <strong>Owner, Moksha Candles</strong>
+              <span><a href="https://www.mokshacandles.com" target="_blank" rel="noopener">mokshacandles.com</a></span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote>
+            <p>"We needed a website that would bring in dinner reservations and help people find us online. Right Framework delivered exactly that — we're now on the first page of Google for our key searches."</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-avatar" aria-hidden="true">OD</div>
+            <div>
+              <strong>Owner, Old Durbar</strong>
+              <span><a href="https://www.olddurbar.ca" target="_blank" rel="noopener">olddurbar.ca</a></span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote>
+            <p>"We went from no online presence to fully booked weekends. Right Framework built us a site that actually makes people hungry before they even walk in the door — reservations have gone up significantly."</p>
+          </blockquote>
+          <footer class="review-author">
+            <div class="review-avatar" aria-hidden="true">MG</div>
+            <div>
+              <strong>Owner, Momon Grill</strong>
+              <span><a href="https://momongrill.ca" target="_blank" rel="noopener">momongrill.ca</a></span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Slider controls -->
+    <div class="reviews-controls" aria-label="Carousel controls">
+      <button class="reviews-prev" id="reviewsPrev" aria-label="Previous reviews">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="reviews-dots" id="reviewsDots" role="tablist" aria-label="Select review page"></div>
+      <button class="reviews-next" id="reviewsNext" aria-label="Next reviews">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <div class="wrap">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <h2>Ready to get more customers from your website?</h2>
+        <p>A free consultation takes 30 minutes. You'll leave with a clear picture of where your site stands and what's holding it back.</p>
+      </div>
+      <a href="#contact" class="btn btn-white btn-lg cta-btn">Get a free consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <p class="label">Get in touch</p>
+        <h2>Let's talk about your project</h2>
+        <p>Tell us about your business and what you're trying to accomplish. We'll get back to you within one business day.</p>
+        <div class="contact-details">
+          <div class="contact-row">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Serving Seattle &amp; the Pacific Northwest</span>
+          </div>
+          <div class="contact-row">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hello@rightframework.co</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="business">Business name</label>
+            <input type="text" id="business" name="business" placeholder="Acme Co." required autocomplete="organization" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="message">What are you working on?</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your business and what you're hoping to achieve with your website." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-blue btn-full">Send message</button>
+        <div class="form-ok" id="formSuccess" role="alert" aria-live="polite" hidden>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Got it — we'll be in touch within one business day.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+
+      <!-- Col 1: Brand -->
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="Right Framework">
+          <div class="logo-mark" aria-hidden="true">RF</div>
+          <span>Right Framework</span>
+        </a>
+        <p class="footer-tagline">Seattle web design for Pacific Northwest small businesses.</p>
+        <p class="footer-company-name">Right Framework Digital Inc.</p>
+        <p class="footer-sub-tagline">A digital agency helping businesses grow online.</p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://www.tiktok.com/@rightframework" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/rightframework" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/rightframework" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/rightframework" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Services (original) -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Website Design</a>
+        <a href="#services">UI/UX Design</a>
+        <a href="#services">SEO Optimization</a>
+        <a href="#services">Website Redesign</a>
+      </div>
+
+      <!-- Col 3: Studio (original) -->
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <a href="#process">Our Process</a>
+        <a href="#work">Our Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Col 4: Support (new) -->
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="#contact">Contact</a>
+        <a href="/refund-policy">Refund and Returns Policy</a>
+      </div>
+
+      <!-- Col 5: Pages (new) -->
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Right Framework</p>
+      <p>Seattle web design studio serving the Pacific Northwest</p>
+    </div>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="footer-copyright">
+    <div class="wrap">
+      <p>Copyright &copy; 2026 Right Framework Digital Inc. | Designed by <a href="https://rightframework.tech" target="_blank" rel="noopener">Right Framework</a> | <a href="/privacy-policy">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+</Layout>
+
+<style>
+/* ── NAV ─────────────────────────────────────────────────── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  transition: box-shadow 0.25s;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.logo-mark {
+  width: 30px;
+  height: 30px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.nav-links a {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-3);
+  padding: 7px 13px;
+  border-radius: 7px;
+  white-space: nowrap;
+  transition: color 0.12s, background 0.12s;
+}
+.nav-links a:hover { color: var(--ink); background: var(--surface); }
+.nav-cta {
+  background: var(--ink) !important;
+  color: var(--white) !important;
+  margin-left: 6px;
+  padding: 7px 16px !important;
+}
+.nav-cta:hover { background: #000 !important; }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.burger span {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: 0.18s;
+}
+.nav-drawer[hidden] { display: none; }
+.nav-drawer {
+  border-top: 1px solid var(--line);
+  background: var(--white);
+  padding: 8px 0 16px;
+}
+.nav-drawer a {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink-2);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.nav-drawer a:last-child { border-bottom: none; }
+.nav-drawer a:hover { color: var(--blue); }
+
+/* ── BUTTONS ─────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s, transform 0.12s;
+  text-decoration: none;
+}
+.btn:active { transform: scale(0.98); }
+.btn-lg { padding: 13px 28px; font-size: 15px; }
+.btn-full { width: 100%; }
+.btn-blue { background: var(--blue); color: #fff; border-color: var(--blue); }
+.btn-blue:hover { background: var(--blue-dark); border-color: var(--blue-dark); box-shadow: 0 4px 16px rgba(26,86,219,0.3); transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--ink-2); border-color: var(--line); }
+.btn-ghost:hover { border-color: var(--ink-5); background: var(--surface); }
+.btn-white { background: #fff; color: var(--ink); border-color: #fff; }
+.btn-white:hover { background: var(--surface); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+
+/* ── LABELS / SECTION HEADS ──────────────────────────────── */
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 12px;
+  display: block;
+}
+.label-inv { color: rgba(255,255,255,0.4); }
+.kicker {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: var(--blue-dim);
+  padding: 5px 13px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+.sec-head { margin-bottom: 56px; }
+.sec-head h2 {
+  font-size: clamp(30px, 3.5vw, 46px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  line-height: 1.12;
+  max-width: 540px;
+}
+.sec-head-inv h2 { color: #fff; }
+
+/* ── HERO ────────────────────────────────────────────────── */
+.hero {
+  padding: 100px 0 96px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.hero-text h1 {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 22px;
+}
+.hero-text h1 em {
+  font-style: italic;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--blue);
+}
+.hero-sub {
+  font-size: 17px;
+  color: var(--ink-3);
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 440px;
+}
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.hero-visual { position: relative; }
+.hero-frame {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06);
+}
+.hero-frame img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+.float {
+  position: absolute;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 13px 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.float strong { font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.025em; line-height: 1; }
+.float span   { font-size: 11px; color: var(--ink-4); font-weight: 500; }
+.float-a { bottom: -16px; left: -24px; animation: floaty 5s ease-in-out infinite; }
+.float-b { top: 24px; right: -20px; animation: floaty 5s ease-in-out infinite 2.5s; }
+@keyframes floaty {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-7px); }
+}
+
+/* ── STATS BAR ───────────────────────────────────────────── */
+.stats-bar {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.stats-row {
+  display: flex;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+.stat strong { font-size: 20px; font-weight: 700; color: var(--ink); letter-spacing: -0.025em; line-height: 1.2; }
+.stat span   { font-size: 12px; color: var(--ink-4); font-weight: 500; }
+.stat-sep { width: 1px; height: 32px; background: var(--line); flex-shrink: 0; }
+
+/* ── PULL QUOTE ──────────────────────────────────────────── */
+.pullquote-section { padding: 100px 0; }
+.pullquote { max-width: 760px; }
+.pullquote p {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 3.2vw, 40px);
+  color: var(--ink-2);
+  line-height: 1.38;
+  font-weight: 400;
+}
+.pullquote-end { color: var(--blue) !important; font-style: italic; margin-top: 8px; }
+
+/* ── VALUE PROPS ─────────────────────────────────────────── */
+.props-section {
+  padding-bottom: 100px;
+}
+.props-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.prop {
+  padding: 36px 28px;
+  background: var(--white);
+  border-right: 1px solid var(--line);
+  transition: background 0.2s;
+}
+.prop:last-child { border-right: none; }
+.prop:hover { background: var(--surface); }
+.prop-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--blue-dim);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  margin-bottom: 18px;
+}
+.prop h3 { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 8px; color: var(--ink); }
+.prop p  { font-size: 13.5px; color: var(--ink-3); line-height: 1.65; }
+
+/* ── SERVICES ────────────────────────────────────────────── */
+.services-section { padding: 100px 0; }
+.svc-list {
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.svc-row {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.13s;
+}
+.svc-row:last-child { border-bottom: none; }
+.svc-row:hover { background: var(--surface); }
+.svc-label {
+  padding: 40px 32px;
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.svc-num { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: var(--blue); }
+.svc-label h3 { font-size: 16px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3; color: var(--ink); }
+.svc-body { padding: 40px 48px; }
+.svc-body p { font-size: 14.5px; color: var(--ink-3); line-height: 1.75; margin-bottom: 20px; max-width: 540px; }
+.svc-features { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+.svc-features li {
+  font-size: 13px;
+  color: var(--ink-3);
+  padding-left: 14px;
+  position: relative;
+}
+.svc-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+
+/* ── PROCESS ─────────────────────────────────────────────── */
+.process-section {
+  padding: 100px 0;
+  background: var(--ink);
+  border-radius: 0;
+}
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.process-card {
+  padding: 48px 40px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: background 0.2s;
+}
+.process-card:last-child { border-right: none; }
+.process-card:hover { background: rgba(255,255,255,0.03); }
+.process-n {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.12);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.3);
+  flex-shrink: 0;
+}
+.process-card h3 { font-size: 17px; font-weight: 600; color: #fff; letter-spacing: -0.015em; }
+.process-card p  { font-size: 14.5px; color: rgba(255,255,255,0.45); line-height: 1.75; }
+
+/* ── WHY ─────────────────────────────────────────────────── */
+.why-section { padding: 100px 0; }
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: start;
+}
+.why-left h2 {
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 20px;
+  line-height: 1.18;
+  max-width: 400px;
+}
+.why-left p { font-size: 15px; color: var(--ink-3); line-height: 1.75; margin-bottom: 14px; max-width: 400px; }
+.why-right { display: flex; flex-direction: column; gap: 28px; padding-top: 56px; }
+.why-item { display: flex; gap: 14px; align-items: flex-start; }
+.why-check {
+  width: 26px;
+  height: 26px;
+  background: var(--blue-dim);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.why-item strong { display: block; font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+.why-item p { font-size: 13.5px; color: var(--ink-3); line-height: 1.65; margin: 0; }
+
+/* ── WORK ────────────────────────────────────────────────── */
+.work-section { padding: 100px 0; }
+
+/* Filter buttons */
+.work-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.filter-btn {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-3);
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: 100px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: color 0.13s, background 0.13s, border-color 0.13s, box-shadow 0.13s;
+  white-space: nowrap;
+}
+.filter-btn:hover { color: var(--ink); border-color: var(--ink-5); background: var(--surface); }
+.filter-btn.active {
+  color: var(--white);
+  background: var(--ink);
+  border-color: var(--ink);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Grid */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.work-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.work-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.1); transform: translateY(-3px); }
+.work-card[hidden] { display: none; }
+
+/* iframe preview */
+.work-preview {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: var(--surface-2);
+  flex-shrink: 0;
+}
+.iframe-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.iframe-wrapper iframe {
+  width: 1280px;
+  height: 900px;
+  border: none;
+  transform-origin: top left;
+  transform: scale(0.375);
+  pointer-events: none;
+  display: block;
+}
+.preview-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+}
+.preview-overlay:hover + .work-info,
+.work-card:hover .work-preview::after {
+  opacity: 1;
+}
+.work-preview::after {
+  content: 'Visit Site';
+  position: absolute;
+  inset: 0;
+  background: rgba(15,15,14,0.45);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Card info */
+.work-info {
+  padding: 22px 24px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+.work-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue); }
+.work-info h3 { font-size: 17px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; color: var(--ink); }
+.work-info p  { font-size: 13.5px; color: var(--ink-3); line-height: 1.65; flex: 1; }
+.work-visit-btn { margin-top: 6px; align-self: flex-start; font-size: 13px; padding: 9px 18px; }
+
+/* Coming Soon cards */
+.work-card-soon { min-height: 360px; }
+.work-soon-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px 32px;
+  background: var(--surface);
+}
+.soon-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-4);
+  margin-bottom: 4px;
+}
+.work-card-soon h3 { font-size: 17px; font-weight: 600; color: var(--ink-2); }
+.work-card-soon p  { font-size: 13.5px; color: var(--ink-4); line-height: 1.65; max-width: 240px; }
+.soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 5px 12px;
+  border-radius: 100px;
+  margin-top: 4px;
+}
+
+/* ── REVIEWS ─────────────────────────────────────────────── */
+.reviews-section { padding: 100px 0; background: var(--surface); }
+
+/* Slider shell */
+.reviews-slider {
+  overflow: hidden;
+  position: relative;
+}
+.reviews-track {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.review-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 calc(33.333% - 11px);
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.review-card:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.08); transform: translateY(-2px); }
+
+/* Controls */
+.reviews-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+.reviews-prev,
+.reviews-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  background: var(--white);
+  color: var(--ink-3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+.reviews-prev:hover,
+.reviews-next:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+.reviews-prev:disabled,
+.reviews-next:disabled { opacity: 0.3; cursor: default; pointer-events: none; }
+.reviews-dots { display: flex; gap: 6px; }
+.reviews-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+.reviews-dot.active { background: var(--ink); transform: scale(1.25); }
+.review-stars {
+  display: flex;
+  gap: 3px;
+  color: #f59e0b;
+}
+.review-stars svg { width: 16px; height: 16px; }
+.review-card blockquote p {
+  font-size: 15.5px;
+  color: var(--ink-2);
+  line-height: 1.75;
+  font-style: italic;
+}
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: auto;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--blue-dim);
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+.review-author strong { display: block; font-size: 13.5px; font-weight: 600; color: var(--ink); }
+.review-author span   { font-size: 12.5px; color: var(--ink-4); }
+.review-author span a { color: var(--blue); transition: opacity 0.13s; }
+.review-author span a:hover { opacity: 0.75; }
+
+/* ── CTA STRIP ───────────────────────────────────────────── */
+.cta-strip {
+  background: var(--blue);
+  padding: 88px 0;
+}
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+}
+.cta-text h2 {
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.03em;
+  line-height: 1.18;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+.cta-text p { font-size: 15.5px; color: rgba(255,255,255,0.65); max-width: 420px; line-height: 1.65; }
+.cta-btn { flex-shrink: 0; }
+
+/* ── CONTACT ─────────────────────────────────────────────── */
+.contact-section { padding: 100px 0; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 96px;
+  align-items: start;
+}
+.contact-left h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 16px;
+  line-height: 1.18;
+}
+.contact-left p { font-size: 15px; color: var(--ink-3); line-height: 1.75; margin-bottom: 32px; max-width: 340px; }
+.contact-details { display: flex; flex-direction: column; gap: 14px; }
+.contact-row { display: flex; align-items: center; gap: 11px; font-size: 14px; color: var(--ink-3); }
+.contact-row svg { color: var(--blue); flex-shrink: 0; }
+
+.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 13px; font-weight: 500; color: var(--ink-2); }
+.field input,
+.field textarea {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  padding: 11px 14px;
+  transition: border-color 0.13s, box-shadow 0.13s;
+  outline: none;
+  resize: vertical;
+  width: 100%;
+}
+.field input::placeholder,
+.field textarea::placeholder { color: var(--ink-5); }
+.field input:focus,
+.field textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(26,86,219,0.1); }
+.form-ok {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+.site-footer {
+  background: #f5f5f5;
+  border-top: 1px solid #e4e4e4;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+  gap: 32px;
+  padding-top: 64px;
+  padding-bottom: 48px;
+  align-items: flex-start;
+}
+.footer-brand { max-width: 280px; }
+.footer-brand .logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 12px; }
+.footer-brand .logo span { font-size: 15px; font-weight: 600; color: var(--ink); }
+.footer-tagline {
+  font-size: 13.5px;
+  color: var(--ink-3);
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+.footer-company-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-2);
+  margin: 0 0 4px;
+}
+.footer-sub-tagline {
+  font-size: 12.5px;
+  color: var(--ink-4);
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+.footer-socials {
+  display: flex;
+  gap: 8px;
+}
+.footer-socials a {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.13s, border-color 0.13s;
+  text-decoration: none;
+}
+.footer-socials a:hover { color: var(--ink); border-color: #aaa; }
+.footer-col { display: flex; flex-direction: column; gap: 10px; }
+.footer-col h4 {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-4);
+  margin-bottom: 4px;
+}
+.footer-col a { font-size: 13.5px; color: var(--ink-3); text-decoration: none; transition: color 0.13s; }
+.footer-col a:hover { color: var(--ink); }
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.footer-bottom p { font-size: 12.5px; color: var(--ink-4); }
+.footer-copyright {
+  background: #ebebeb;
+  border-top: 1px solid #e0e0e0;
+  padding: 14px 0;
+}
+.footer-copyright p {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+.footer-copyright a { color: #666; text-decoration: none; transition: color 0.13s; }
+.footer-copyright a:hover { color: var(--ink); }
+
+/* ── FADE IN ─────────────────────────────────────────────── */
+.js-fade { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.js-fade.visible { opacity: 1; transform: none; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .hero-grid { gap: 48px; }
+  .why-grid  { gap: 56px; }
+  .contact-grid { gap: 56px; }
+  .props-grid { grid-template-columns: 1fr 1fr; }
+  .prop { border-bottom: 1px solid var(--line); }
+  .prop:nth-child(2n) { border-right: none; }
+  .prop:nth-child(3), .prop:nth-child(4) { border-bottom: none; }
+  .svc-row { grid-template-columns: 220px 1fr; }
+  .cta-inner { flex-direction: column; text-align: center; gap: 28px; }
+  .cta-text h2, .cta-text p { max-width: 100%; }
+  .cta-btn { align-self: center; }
+  .work-grid { grid-template-columns: 1fr 1fr; }
+  .review-card { flex: 0 0 calc(50% - 8px); }
+}
+
+@media (max-width: 860px) {
+  .svc-row { grid-template-columns: 1fr; }
+  .svc-label { border-right: none; border-bottom: 1px solid var(--line); padding: 24px 28px; flex-direction: row; align-items: center; gap: 14px; }
+  .svc-body { padding: 24px 28px 32px; }
+  .svc-features { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-card { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .process-card:last-child { border-bottom: none; }
+}
+
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .burger { display: flex; }
+
+  .hero { padding: 64px 0 72px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 0; }
+  .hero-visual { display: none; }
+  .hero-text h1 { text-align: center; }
+  .hero-sub { text-align: center; max-width: 100%; margin-left: auto; margin-right: auto; }
+  .hero-btns { justify-content: center; }
+  .kicker { display: block; text-align: center; width: fit-content; margin: 0 auto 24px; }
+
+  .pullquote-section { padding: 72px 0; }
+  .props-section { padding-bottom: 72px; }
+  .services-section, .process-section, .why-section, .work-section, .reviews-section, .contact-section { padding: 72px 0; }
+  .review-card { flex: 0 0 calc(100% - 0px); }
+
+  .why-grid { grid-template-columns: 1fr; gap: 40px; }
+  .why-right { padding-top: 0; }
+  .work-grid { grid-template-columns: 1fr; }
+  .work-filters { gap: 6px; }
+  .filter-btn { font-size: 12px; padding: 7px 14px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-left p { max-width: 100%; }
+  .field-row { grid-template-columns: 1fr; }
+  .footer-top { padding-top: 48px; padding-bottom: 40px; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-brand { grid-column: 1 / -1; max-width: 100%; }
+  .footer-bottom { flex-direction: column; gap: 4px; text-align: center; }
+}
+
+@media (max-width: 540px) {
+  .props-grid { grid-template-columns: 1fr; }
+  .prop { border-right: none; border-bottom: 1px solid var(--line); }
+  .prop:last-child { border-bottom: none; }
+  .stats-row { flex-wrap: wrap; gap: 20px; padding-top: 20px; padding-bottom: 20px; }
+  .stat-sep { display: none; }
+  .stat { flex: 0 0 calc(50% - 10px); }
+  .footer-top { grid-template-columns: 1fr; }
+}
+</style>
+
+<script>
+  /* Portfolio filter */
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const workCards  = document.querySelectorAll<HTMLElement>('#workGrid .work-card');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter ?? 'all';
+      filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      workCards.forEach(card => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.hidden = !match;
+      });
+    });
+  });
+
+  /* Nav shadow on scroll */
+  const navEl = document.querySelector('.nav') as HTMLElement | null;
+  window.addEventListener('scroll', () => {
+    if (navEl) navEl.style.boxShadow = window.scrollY > 8 ? '0 2px 10px rgba(0,0,0,0.07)' : 'none';
+  }, { passive: true });
+
+  /* Mobile menu */
+  const burgerBtn = document.getElementById('burger') as HTMLButtonElement | null;
+  const drawerEl  = document.getElementById('drawer')  as HTMLElement | null;
+  burgerBtn?.addEventListener('click', () => {
+    const open = !drawerEl?.hidden;
+    if (drawerEl) drawerEl.hidden = open;
+    burgerBtn.setAttribute('aria-expanded', String(!open));
+  });
+  drawerEl?.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (drawerEl) drawerEl.hidden = true;
+      burgerBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* Reviews slider */
+  (() => {
+    const track   = document.getElementById('reviewsTrack') as HTMLElement | null;
+    const prevBtn = document.getElementById('reviewsPrev') as HTMLButtonElement | null;
+    const nextBtn = document.getElementById('reviewsNext') as HTMLButtonElement | null;
+    const dotsEl  = document.getElementById('reviewsDots') as HTMLElement | null;
+    if (!track || !prevBtn || !nextBtn || !dotsEl) return;
+
+    const cards = Array.from(track.querySelectorAll<HTMLElement>('.review-card'));
+    let perPage = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+    const pages = () => Math.ceil(cards.length / perPage);
+    let current = 0;
+    let autoTimer: ReturnType<typeof setInterval>;
+
+    function buildDots() {
+      dotsEl!.innerHTML = '';
+      for (let i = 0; i < pages(); i++) {
+        const d = document.createElement('button');
+        d.className = 'reviews-dot' + (i === current ? ' active' : '');
+        d.setAttribute('role', 'tab');
+        d.setAttribute('aria-label', `Go to page ${i + 1}`);
+        d.addEventListener('click', () => { goTo(i); resetAuto(); });
+        dotsEl!.appendChild(d);
+      }
+    }
+
+    function goTo(page: number) {
+      current = Math.max(0, Math.min(page, pages() - 1));
+      const gap = 16;
+      const cardW = cards[0]?.offsetWidth ?? 0;
+      track!.style.transform = `translateX(-${current * (cardW + gap) * perPage}px)`;
+      prevBtn!.disabled = current === 0;
+      nextBtn!.disabled = current >= pages() - 1;
+      dotsEl!.querySelectorAll<HTMLButtonElement>('.reviews-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    function resetAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(() => goTo(current >= pages() - 1 ? 0 : current + 1), 5000);
+    }
+
+    prevBtn.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+    nextBtn.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+
+    window.addEventListener('resize', () => {
+      const newPer = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+      if (newPer !== perPage) { perPage = newPer; current = 0; buildDots(); goTo(0); }
+    });
+
+    buildDots();
+    goTo(0);
+    resetAuto();
+  })();
+
+  /* Scroll fade-in */
+  const targets = document.querySelectorAll<HTMLElement>('.prop, .svc-row, .process-card, .work-card, .why-item, .review-card');
+  targets.forEach(el => el.classList.add('js-fade'));
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.06 });
+  targets.forEach(el => io.observe(el));
+
+  /* Contact form */
+  const form    = document.getElementById('contactForm') as HTMLFormElement | null;
+  const formMsg = document.getElementById('formSuccess') as HTMLElement | null;
+  form?.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    setTimeout(() => {
+      form.reset();
+      btn.textContent = 'Send message';
+      btn.disabled = false;
+      if (formMsg) { formMsg.hidden = false; setTimeout(() => { formMsg.hidden = true; }, 6000); }
+    }, 800);
+  });
+</script>

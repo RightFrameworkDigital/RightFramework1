@@ -1,0 +1,94 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Right Framework — Seattle Web Design Studio",
+  description = "Right Framework is a Seattle-based web studio helping small businesses across the Pacific Northwest build modern, SEO-optimized websites that bring real customers.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  ul { list-style: none; }
+
+  :root {
+    --ink:      #0f0f0e;
+    --ink-2:    #383836;
+    --ink-3:    #65655f;
+    --ink-4:    #9f9f99;
+    --ink-5:    #c8c8c2;
+    --line:     #e8e7e3;
+    --surface:  #f6f5f2;
+    --surface-2:#eeede9;
+    --white:    #ffffff;
+    --blue:     #1a56db;
+    --blue-dim: #eef2fb;
+    --blue-mid: #2563eb;
+    --blue-dark:#1440b3;
+
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-serif:'Instrument Serif', Georgia, serif;
+    --r:  12px;
+    --r-lg: 20px;
+
+    /* Spacing scale */
+    --space-xs:  8px;
+    --space-sm:  16px;
+    --space-md:  32px;
+    --space-lg:  64px;
+    --space-xl:  96px;
+    --space-2xl: 128px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  /* ── Container ───────────────────────────────────────────
+     Always 80px from each viewport edge on desktop,
+     never wider than 1200px, gracefully smaller on narrow screens.
+  ──────────────────────────────────────────────────────── */
+  .wrap {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(20px, 6.5vw, 80px);
+    padding-right: clamp(20px, 6.5vw, 80px);
+  }
+</style>
