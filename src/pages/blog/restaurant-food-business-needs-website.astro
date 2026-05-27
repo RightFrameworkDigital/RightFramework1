@@ -50,19 +50,65 @@ import Layout from '../../layouts/Layout.astro';
 </div>
 <footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand"><a href="/" class="footer-logo"><svg class="logo-img" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M8 8h10a4 4 0 0 1 0 8H8V8z" fill="#fff"/><path d="M8 16h7l5 8h-4l-4-6.5V24H8V16z" fill="#fff"/></svg><span>Right Framework</span></a><p class="footer-tagline">Seattle web design for Pacific Northwest small businesses.</p><p class="footer-cn">Right Framework Digital Inc.</p><div class="footer-socials"><a href="https://www.tiktok.com/@rightframework" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg></a><a href="https://www.instagram.com/rightframework" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div><div class="footer-col"><h4>Services</h4><a href="/#services">Website Design</a><a href="/#services">SEO Optimization</a><a href="/#services">Website Redesign</a></div><div class="footer-col"><h4>Support</h4><a href="/#process">Our Process</a><a href="/#work">Our Work</a><a href="/#contact">Contact</a><a href="/privacy-policy">Privacy Policy</a></div><div class="footer-col"><h4>Pages</h4><a href="/">Home</a><a href="/blog">Blog</a></div></div></div><div class="footer-copyright"><div class="wrap"><p>Copyright &copy; 2026 Right Framework Digital Inc. | <a href="/privacy-policy">Privacy Policy</a></p></div></div></footer>
 </Layout>
-<script>
+<script type="module">
+  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+  const SUPABASE_URL = 'https://ueamxuwrpfokcghpypzg.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVlYW14dXdycGZva2NnaHB5cHpnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4NTA5NzksImV4cCI6MjA5NTQyNjk3OX0.WqFwt2ZtUKlERx9O8ge-ZxQBZCd5Gff7VUPhqJOyy_M';
+  const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
   const slug = 'restaurant-food-business-needs-website';
-  let likes = parseInt(localStorage.getItem(`likes_${slug}`) || '0');
   const likeBtn = document.getElementById('likeBtn');
   const likeCount = document.getElementById('likeCount');
-  if (likeCount) likeCount.textContent = String(likes);
-  likeBtn?.addEventListener('click', () => { likes++; localStorage.setItem(`likes_${slug}`, String(likes)); if (likeCount) likeCount.textContent = String(likes); likeBtn.classList.add('liked'); });
-  let comments = JSON.parse(localStorage.getItem(`comments_${slug}`) || '[]');
   const commentsList = document.getElementById('commentsList');
   const commentForm = document.getElementById('commentForm');
-  function renderComments() { if (!commentsList) return; commentsList.innerHTML = comments.length === 0 ? '<p class="no-comments">No comments yet. Be the first!</p>' : comments.map((c) => `<div class="comment-item"><div class="comment-meta"><strong>${c.name}</strong><span>${c.date}</span></div><p>${c.text}</p></div>`).join(''); }
-  renderComments();
-  commentForm?.addEventListener('submit', (e) => { e.preventDefault(); const n = document.getElementById('commentName'); const t = document.getElementById('commentText'); const name = n.value.trim(); const text = t.value.trim(); if (!name || !text) return; comments.push({ name, text, date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) }); localStorage.setItem(`comments_${slug}`, JSON.stringify(comments)); renderComments(); n.value = ''; t.value = ''; });
+
+  async function loadLikes() {
+    const { data } = await supabase.from('likes').select('count').eq('blog_slug', slug).maybeSingle();
+    if (likeCount) likeCount.textContent = String(data?.count ?? 0);
+  }
+
+  async function loadComments() {
+    const { data } = await supabase.from('comments').select('name, comment, created_at').eq('blog_slug', slug).order('created_at', { ascending: true });
+    renderComments(data ?? []);
+  }
+
+  function renderComments(comments) {
+    if (!commentsList) return;
+    commentsList.innerHTML = comments.length === 0
+      ? '<p class="no-comments">No comments yet. Be the first!</p>'
+      : comments.map((c) => {
+          const date = new Date(c.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+          return `<div class="comment-item"><div class="comment-meta"><strong>${c.name}</strong><span>${date}</span></div><p>${c.comment}</p></div>`;
+        }).join('');
+  }
+
+  likeBtn?.addEventListener('click', async () => {
+    likeBtn.disabled = true;
+    await supabase.rpc('increment_likes', { slug });
+    await loadLikes();
+    likeBtn.classList.add('liked');
+    likeBtn.disabled = false;
+  });
+
+  commentForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const nameEl = document.getElementById('commentName');
+    const textEl = document.getElementById('commentText');
+    const name = nameEl.value.trim();
+    const comment = textEl.value.trim();
+    if (!name || !comment) return;
+    const submitBtn = commentForm.querySelector('.submit-btn');
+    if (submitBtn) submitBtn.disabled = true;
+    await supabase.from('comments').insert({ blog_slug: slug, name, comment });
+    nameEl.value = '';
+    textEl.value = '';
+    await loadComments();
+    if (submitBtn) submitBtn.disabled = false;
+  });
+
+  loadLikes();
+  loadComments();
 </script>
 <style>
   .wrap { max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px, 6.5vw, 80px); }
