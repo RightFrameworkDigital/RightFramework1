@@ -2,11 +2,15 @@
 interface Props {
   title?: string;
   description?: string;
+  canonicalURL?: string;
+  ogImage?: string;
 }
 
 const {
-  title = "Right Framework — Seattle Web Design Studio",
-  description = "Right Framework is a Seattle-based web studio helping small businesses across the Pacific Northwest build modern, SEO-optimized websites that bring real customers.",
+  title = "Seattle Web Design Agency | Right Framework Digital Inc.",
+  description = "Right Framework is a Seattle web design agency helping small businesses across the Pacific Northwest build modern, SEO-optimized websites that bring real customers.",
+  canonicalURL = Astro.url.href,
+  ogImage = "https://www.rightframework.tech/logo.png",
 } = Astro.props;
 ---
 
@@ -20,9 +24,21 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="googlea128fb5184110348" />
+    <link rel="canonical" href={canonicalURL} />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Right Framework Digital Inc." />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />

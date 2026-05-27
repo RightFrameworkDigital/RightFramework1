@@ -2,7 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
+<Layout
+  title="Seattle Web Design Agency | Right Framework Digital Inc."
+  description="Right Framework is a Seattle web design agency building fast, SEO-optimized websites for small businesses across the Pacific Northwest. Get found on Google and grow."
+  canonicalURL="https://www.rightframework.tech/"
+>
 
 <!-- NAV -->
 <header class="nav" id="nav">
@@ -714,6 +718,72 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Right Framework Digital Inc.",
+  "url": "https://www.rightframework.tech",
+  "description": "Seattle web design agency helping small businesses grow online",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seattle",
+    "addressRegion": "WA",
+    "addressCountry": "US"
+  },
+  "areaServed": "Seattle, WA and Pacific Northwest"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Right Framework Digital Inc. do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Right Framework Digital Inc. is a Seattle-based web design agency that helps small businesses grow online through website design, SEO optimization, and digital marketing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Right Framework Digital located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Right Framework Digital Inc. is based in Seattle, WA serving small businesses across the Pacific Northwest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a website cost at Right Framework Digital?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Right Framework Digital Inc. offers custom website design packages for small businesses in Seattle starting at competitive rates. Contact us for a free quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services does Right Framework Digital offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Right Framework Digital offers website design, UI/UX design, SEO optimization, and website redesign services for small businesses in Seattle and the Pacific Northwest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why choose Right Framework Digital for web design in Seattle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Right Framework Digital combines local Seattle market knowledge with modern web design and SEO expertise to build sites that rank on Google and convert visitors into paying customers."
+      }
+    }
+  ]
+}
+</script>
 
 </Layout>
 
