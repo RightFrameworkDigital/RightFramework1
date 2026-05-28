@@ -597,51 +597,138 @@ import Layout from '../layouts/Layout.astro';
 <!-- CONTACT -->
 <section class="contact-section" id="contact">
   <div class="wrap">
-    <div class="contact-grid">
-      <div class="contact-left">
-        <p class="label">Get in touch</p>
-        <h2>Let's talk about your project</h2>
-        <p>Tell us about your business and what you're trying to accomplish. We'll get back to you within one business day.</p>
-        <div class="contact-details">
-          <div class="contact-row">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Serving Seattle &amp; the Pacific Northwest</span>
-          </div>
-          <div class="contact-row">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>hello@rightframework.co</span>
-          </div>
-          <div class="contact-row">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <a href="tel:+13014335323" style="color:inherit;text-decoration:none;">(301) 433-5323</a>
-          </div>
+    <div class="contact-center">
+      <p class="label" style="text-align:center;">Get in touch</p>
+      <h2 style="text-align:center;">Let's talk about your project</h2>
+      <p class="contact-sub">Choose how you'd like to connect — book a free 30-minute consultation call or send us a message.</p>
+      <div class="contact-meta">
+        <div class="contact-row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Serving Seattle &amp; the Pacific Northwest</span>
         </div>
+        <a class="contact-row contact-row-link" href="mailto:contact@rightframework.tech">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          contact@rightframework.tech
+        </a>
+        <a class="contact-row contact-row-link" href="tel:+13014335323">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (301) 433-5323
+        </a>
       </div>
-      <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
-        <div class="field-row">
-          <div class="field">
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+
+      <div class="contact-form-wrap">
+        <!-- Mode toggle -->
+        <div class="contact-tabs" role="tablist" aria-label="Contact method">
+          <button class="contact-tab active" id="tabAppt" role="tab" aria-selected="true" aria-controls="panelAppt" data-tab="appointment">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book a call
+          </button>
+          <button class="contact-tab" id="tabMsg" role="tab" aria-selected="false" aria-controls="panelMsg" data-tab="message">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Send a message
+          </button>
+        </div>
+
+        <!-- Panel: Book appointment -->
+        <form class="contact-form" id="panelAppt" role="tabpanel" aria-labelledby="tabAppt" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="appt-name">Your name</label>
+              <input type="text" id="appt-name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="appt-business">Business name</label>
+              <input type="text" id="appt-business" name="business" placeholder="Acme Co." required autocomplete="organization" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="appt-phone">Phone number</label>
+              <input type="tel" id="appt-phone" name="phone" placeholder="(206) 555-0100" required autocomplete="tel" />
+            </div>
+            <div class="field">
+              <label for="appt-email">Email <span class="field-optional">(optional)</span></label>
+              <input type="email" id="appt-email" name="email" placeholder="jane@yourbusiness.com" autocomplete="email" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="appt-date">Preferred date</label>
+              <input type="date" id="appt-date" name="date" required />
+            </div>
+            <div class="field">
+              <label for="appt-time">Preferred time</label>
+              <select id="appt-time" name="time" required>
+                <option value="" disabled selected>Select a time</option>
+                <option>10:00 AM</option>
+                <option>10:30 AM</option>
+                <option>11:00 AM</option>
+                <option>11:30 AM</option>
+                <option>12:00 PM</option>
+                <option>12:30 PM</option>
+                <option>1:00 PM</option>
+                <option>1:30 PM</option>
+                <option>2:00 PM</option>
+                <option>2:30 PM</option>
+                <option>3:00 PM</option>
+                <option>3:30 PM</option>
+                <option>4:00 PM</option>
+                <option>4:30 PM</option>
+                <option>5:00 PM</option>
+                <option>5:30 PM</option>
+                <option>6:00 PM</option>
+                <option>6:30 PM</option>
+                <option>7:00 PM</option>
+              </select>
+            </div>
           </div>
           <div class="field">
-            <label for="business">Business name</label>
-            <input type="text" id="business" name="business" placeholder="Acme Co." required autocomplete="organization" />
+            <label for="appt-message">Anything we should know beforehand?</label>
+            <textarea id="appt-message" name="message" rows="3" placeholder="Tell us about your business and what you're hoping to achieve." required></textarea>
           </div>
-        </div>
-        <div class="field">
-          <label for="email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required autocomplete="email" />
-        </div>
-        <div class="field">
-          <label for="message">What are you working on?</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your business and what you're hoping to achieve with your website." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-blue btn-full">Send message</button>
-        <div class="form-ok" id="formSuccess" role="alert" aria-live="polite" hidden>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-          Got it — we'll be in touch within one business day.
-        </div>
-      </form>
+          <button type="submit" class="btn btn-blue btn-full">Request consultation</button>
+          <div class="form-ok" id="apptSuccess" role="alert" aria-live="polite" hidden>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Consultation request sent — we'll confirm your time within one business day.
+          </div>
+          <div class="form-err" id="apptError" role="alert" aria-live="polite" hidden>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Something went wrong. Please email us directly at contact@rightframework.tech
+          </div>
+        </form>
+
+        <!-- Panel: Send message -->
+        <form class="contact-form" id="panelMsg" role="tabpanel" aria-labelledby="tabMsg" novalidate hidden>
+          <div class="field-row">
+            <div class="field">
+              <label for="msg-name">Your name</label>
+              <input type="text" id="msg-name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="msg-business">Business name</label>
+              <input type="text" id="msg-business" name="business" placeholder="Acme Co." autocomplete="organization" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="msg-email">Email address</label>
+            <input type="email" id="msg-email" name="email" placeholder="jane@yourbusiness.com" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="msg-message">What are you working on?</label>
+            <textarea id="msg-message" name="message" rows="5" placeholder="Tell us about your business and what you're hoping to achieve with your website." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue btn-full">Send message</button>
+          <div class="form-ok" id="msgSuccess" role="alert" aria-live="polite" hidden>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Got it — we'll be in touch within one business day.
+          </div>
+          <div class="form-err" id="msgError" role="alert" aria-live="polite" hidden>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Something went wrong. Please email us directly at contact@rightframework.tech
+          </div>
+        </form>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1515,26 +1602,52 @@ import Layout from '../layouts/Layout.astro';
 
 /* ── CONTACT ─────────────────────────────────────────────── */
 .contact-section { padding: 100px 0; }
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 96px;
-  align-items: start;
+.contact-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
 }
-.contact-left h2 {
+.contact-center h2 {
   font-size: clamp(24px, 3vw, 36px);
   font-weight: 600;
   letter-spacing: -0.03em;
   color: var(--ink);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   line-height: 1.18;
 }
-.contact-left p { font-size: 15px; color: var(--ink-3); line-height: 1.75; margin-bottom: 32px; max-width: 340px; }
-.contact-details { display: flex; flex-direction: column; gap: 14px; }
+.contact-sub { font-size: 15px; color: var(--ink-3); line-height: 1.75; margin-bottom: 24px; text-align: center; }
+.contact-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 36px; }
 .contact-row { display: flex; align-items: center; gap: 11px; font-size: 14px; color: var(--ink-3); }
 .contact-row svg { color: var(--blue); flex-shrink: 0; }
+.contact-row-link {
+  text-decoration: none; border-radius: 8px;
+  padding: 6px 10px; margin: -6px -10px;
+  transition: background 0.15s, color 0.15s;
+}
+.contact-row-link:hover { background: var(--blue-dim); color: var(--blue); }
+.contact-row-link:hover svg { color: var(--blue); }
+.field-optional { font-size: 11px; font-weight: 400; color: var(--ink-4); text-transform: none; letter-spacing: 0; }
 
-.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.contact-form-wrap { display: flex; flex-direction: column; gap: 0; width: 100%; }
+[hidden] { display: none !important; }
+.contact-tabs { display: flex; gap: 0; border: 1.5px solid var(--line); border-radius: 12px 12px 0 0; overflow: hidden; background: var(--surface); }
+.contact-tab {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+  padding: 13px 16px; font-size: 14px; font-weight: 600; color: var(--ink-3);
+  background: var(--surface); border: none; cursor: pointer;
+  transition: background 0.15s, color 0.15s; border-bottom: 2px solid transparent;
+}
+.contact-tab:first-child { border-right: 1px solid var(--line); }
+.contact-tab.active { background: #fff; color: var(--blue); border-bottom-color: var(--blue); }
+.contact-tab:hover:not(.active) { background: #fff; color: var(--ink-2); }
+.contact-form {
+  display: flex; flex-direction: column; gap: 16px;
+  background: #fff; border: 1.5px solid var(--line); border-top: none;
+  border-radius: 0 0 14px 14px; padding: 28px;
+}
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field label { font-size: 13px; font-weight: 500; color: var(--ink-2); }
@@ -1555,19 +1668,28 @@ import Layout from '../layouts/Layout.astro';
 .field input::placeholder,
 .field textarea::placeholder { color: var(--ink-5); }
 .field input:focus,
-.field textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(26,86,219,0.1); }
-.form-ok {
+.field textarea:focus,
+.field select:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(26,86,219,0.1); }
+.field select {
+  font-size: 14px; color: var(--ink); background: var(--white);
+  border: 1.5px solid var(--line); border-radius: 8px;
+  padding: 11px 14px; outline: none; width: 100%;
+  transition: border-color 0.13s, box-shadow 0.13s; appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 12px center;
+}
+.field input[type="date"] { font-family: inherit; }
+.form-ok, .form-err {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 13.5px;
   font-weight: 500;
-  color: #166534;
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
   border-radius: 8px;
   padding: 12px 16px;
 }
+.form-ok { color: #166534; background: #f0fdf4; border: 1px solid #bbf7d0; }
+.form-err { color: #991b1b; background: #fef2f2; border: 1px solid #fecaca; }
 
 /* ── FOOTER ──────────────────────────────────────────────── */
 .site-footer {
@@ -1662,7 +1784,7 @@ import Layout from '../layouts/Layout.astro';
 @media (max-width: 1024px) {
   .hero-grid { gap: 48px; }
   .why-grid  { gap: 56px; }
-  .contact-grid { gap: 56px; }
+  .contact-center { gap: 0; }
   .props-grid { grid-template-columns: 1fr 1fr; }
   .prop { border-bottom: 1px solid var(--line); }
   .prop:nth-child(2n) { border-right: none; }
@@ -1708,8 +1830,7 @@ import Layout from '../layouts/Layout.astro';
   .work-grid { grid-template-columns: 1fr; }
   .work-filters { gap: 6px; }
   .filter-btn { font-size: 12px; padding: 7px 14px; }
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-  .contact-left p { max-width: 100%; }
+  .contact-sub { max-width: 100%; }
   .field-row { grid-template-columns: 1fr; }
   .footer-top { padding-top: 48px; padding-bottom: 40px; grid-template-columns: 1fr 1fr; gap: 32px; }
   .footer-brand { grid-column: 1 / -1; max-width: 100%; }
@@ -1829,19 +1950,94 @@ import Layout from '../layouts/Layout.astro';
   }, { threshold: 0.06 });
   targets.forEach(el => io.observe(el));
 
-  /* Contact form */
-  const form    = document.getElementById('contactForm') as HTMLFormElement | null;
-  const formMsg = document.getElementById('formSuccess') as HTMLElement | null;
-  form?.addEventListener('submit', e => {
-    e.preventDefault();
+  /* Contact tabs */
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.contact-tab');
+  const panelAppt = document.getElementById('panelAppt') as HTMLFormElement | null;
+  const panelMsg  = document.getElementById('panelMsg')  as HTMLFormElement | null;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      const isAppt = tab.dataset.tab === 'appointment';
+      if (panelAppt) panelAppt.hidden = !isAppt;
+      if (panelMsg)  panelMsg.hidden  =  isAppt;
+    });
+  });
+
+  /* Restrict date picker: tomorrow onwards, Mon–Sat only */
+  const dateInput = document.getElementById('appt-date') as HTMLInputElement | null;
+  if (dateInput) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const pad = (n: number) => String(n).padStart(2, '0');
+    const minDate = `${tomorrow.getFullYear()}-${pad(tomorrow.getMonth()+1)}-${pad(tomorrow.getDate())}`;
+    dateInput.min = minDate;
+    dateInput.addEventListener('change', () => {
+      const d = new Date(dateInput.value + 'T00:00:00');
+      const day = d.getDay(); // 0=Sun, 6=Sat
+      if (day === 0) {
+        dateInput.setCustomValidity('We are not available on Sundays. Please choose Monday–Saturday.');
+        dateInput.reportValidity();
+      } else {
+        dateInput.setCustomValidity('');
+      }
+    });
+  }
+
+  const SUPABASE_URL = "https://abcuolcsfdvvzudvddse.supabase.co";
+  const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFiY3VvbGNzZmR2dnp1ZHZkZHNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4NTA4MzMsImV4cCI6MjA5NTQyNjgzM30.ZBppMgg2bwp3l7GXC5H6eRZn9Wtdj1L40O_MicV9swk";
+
+  async function submitForm(
+    form: HTMLFormElement,
+    type: 'appointment' | 'message',
+    successEl: HTMLElement | null,
+    errorEl: HTMLElement | null
+  ) {
     const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const origText = btn.textContent ?? '';
     btn.textContent = 'Sending…';
     btn.disabled = true;
-    setTimeout(() => {
-      form.reset();
-      btn.textContent = 'Send message';
+    if (successEl) successEl.hidden = true;
+    if (errorEl)   errorEl.hidden   = true;
+
+    const fd = new FormData(form);
+    const payload: Record<string, string> = { type };
+    fd.forEach((v, k) => { payload[k] = v as string; });
+
+    try {
+      const res = await fetch(`${SUPABASE_URL}/functions/v1/send-contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        form.reset();
+        if (successEl) { successEl.hidden = false; setTimeout(() => { successEl.hidden = true; }, 8000); }
+      } else {
+        if (errorEl) { errorEl.hidden = false; }
+      }
+    } catch {
+      if (errorEl) { errorEl.hidden = false; }
+    } finally {
+      btn.textContent = origText;
       btn.disabled = false;
-      if (formMsg) { formMsg.hidden = false; setTimeout(() => { formMsg.hidden = true; }, 6000); }
-    }, 800);
+    }
+  }
+
+  panelAppt?.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!panelAppt.checkValidity()) { panelAppt.reportValidity(); return; }
+    submitForm(panelAppt, 'appointment', document.getElementById('apptSuccess'), document.getElementById('apptError'));
+  });
+
+  panelMsg?.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!panelMsg.checkValidity()) { panelMsg.reportValidity(); return; }
+    submitForm(panelMsg, 'message', document.getElementById('msgSuccess'), document.getElementById('msgError'));
   });
 </script>
