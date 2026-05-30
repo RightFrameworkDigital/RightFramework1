@@ -3,25 +3,31 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="Seattle Web Design Agency | Right Framework Digital Inc."
-  description="Right Framework is a Seattle web design agency building fast, SEO-optimized websites for small businesses across the Pacific Northwest. Get found on Google and grow."
+  title="Seattle Web Design for Small Businesses | Right Framework Digital Agency"
+  description="Right Framework helps Seattle small businesses get their first website online at the most affordable price in the market. Simple, fast, no hassle. Get your business found on Google today."
   canonicalURL="https://www.rightframework.tech/"
 >
 
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="/" class="logo" aria-label="Right Framework">
-      <svg class="logo-img" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M8 8h10a4 4 0 0 1 0 8H8V8z" fill="#fff"/><path d="M8 16h7l5 8h-4l-4-6.5V24H8V16z" fill="#fff"/></svg>
-      <span>Right Framework</span>
+    <a href="/" class="logo" aria-label="Right Framework Digital Agency">
+      <img src="/ChatGPT_Image_May_29,_2026,_04_36_51_PM.jpeg" alt="Right Framework Digital Agency logo" class="logo-img" width="160" height="160" />
+      <span class="logo-text-wrap">
+        <span class="logo-name">Right Framework</span>
+        <span class="logo-motto">Your First Website, Built for Growth.</span>
+      </span>
     </a>
     <ul class="nav-links" role="list" aria-label="Main navigation">
       <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#work">Our Work</a></li>
       <li><a href="/blog">Blog</a></li>
-      <li><a href="#contact" class="nav-cta">Get in touch</a></li>
-      <li><a href="tel:+13014335323" class="nav-call" aria-label="Call us"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a></li>
+      <li><a href="#contact" class="nav-cta">Get a free quote</a></li>
+      <li><a href="tel:+15097313450" class="nav-call" aria-label="Call us: (509) 731-3450">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="nav-call-label">Call us</span>
+      </a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span>
@@ -30,10 +36,14 @@ import Layout from '../layouts/Layout.astro';
   <div class="nav-drawer" id="drawer" hidden>
     <div class="wrap">
       <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#work">Work</a>
+      <a href="#process">How It Works</a>
+      <a href="#work">Our Work</a>
       <a href="/blog">Blog</a>
-      <a href="#contact">Get in touch</a>
+      <a href="#contact">Get a free quote</a>
+      <a href="tel:+15097313450" class="drawer-call">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call us: (509) 731-3450
+      </a>
     </div>
   </div>
 </header>
@@ -45,13 +55,14 @@ import Layout from '../layouts/Layout.astro';
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-text">
-        <p class="kicker">Seattle Web Studio</p>
-        <h1>We build websites<br><em>that bring customers.</em></h1>
-        <p class="hero-sub">Right Framework helps small businesses across the Pacific Northwest get more visibility, more traffic, and more customers — with modern, SEO-optimized websites built to perform.</p>
+        <p class="kicker">Seattle's First Website Partner</p>
+        <h1>Your First Website<br>in Seattle —<br><em>At a Price No One Beats.</em></h1>
+        <p class="hero-sub">If your business isn't online yet, you're invisible to customers searching right now. We get Seattle small businesses their first website — fast, simple, and at the most affordable price in the market. No tech knowledge needed.</p>
         <div class="hero-btns">
-          <a href="#contact" class="btn btn-blue btn-lg">Get a free consultation</a>
-          <a href="#work" class="btn btn-ghost btn-lg">See our work</a>
+          <a href="#contact" class="btn btn-blue btn-lg">Get a free quote today</a>
+          <a href="#services" class="btn btn-ghost btn-lg">See our packages</a>
         </div>
+        <p class="hero-guarantee">Price match guarantee — we beat any local competitor's quote.</p>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-frame">
@@ -65,12 +76,12 @@ import Layout from '../layouts/Layout.astro';
           />
         </div>
         <div class="float float-a">
-          <strong>+142%</strong>
-          <span>Organic traffic</span>
+          <strong>7 days</strong>
+          <span>Avg. launch time</span>
         </div>
         <div class="float float-b">
-          <strong>1.2s</strong>
-          <span>Avg. load time</span>
+          <strong>#1</strong>
+          <span>Most affordable in Seattle</span>
         </div>
       </div>
     </div>
@@ -83,22 +94,22 @@ import Layout from '../layouts/Layout.astro';
     <div class="stats-row">
       <div class="stat">
         <strong>50+</strong>
-        <span>Projects delivered</span>
+        <span>Seattle businesses launched</span>
       </div>
       <div class="stat-sep" aria-hidden="true"></div>
       <div class="stat">
-        <strong>3×</strong>
-        <span>Avg. traffic growth</span>
+        <strong>7 days</strong>
+        <span>Average time to go live</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>$0 down</strong>
+        <span>No upfront payment needed</span>
       </div>
       <div class="stat-sep" aria-hidden="true"></div>
       <div class="stat">
         <strong>Seattle</strong>
-        <span>Based &amp; operated</span>
-      </div>
-      <div class="stat-sep" aria-hidden="true"></div>
-      <div class="stat">
-        <strong>Since 2020</strong>
-        <span>Serving clients</span>
+        <span>Local &amp; always available</span>
       </div>
     </div>
   </div>
@@ -108,8 +119,8 @@ import Layout from '../layouts/Layout.astro';
 <section class="pullquote-section">
   <div class="wrap">
     <blockquote class="pullquote">
-      <p>Most small business websites in Seattle are invisible on Google and fail to convert the visitors they do get.</p>
-      <p class="pullquote-end">We fix both.</p>
+      <p>Most Seattle small businesses still don't have a website. Their competitors do.</p>
+      <p class="pullquote-end">We fix that — fast and affordably.</p>
     </blockquote>
   </div>
 </section>
@@ -120,31 +131,31 @@ import Layout from '../layouts/Layout.astro';
     <div class="props-grid">
       <div class="prop">
         <div class="prop-icon" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <h3>Modern Design</h3>
-        <p>Purposeful interfaces that guide visitors toward action — not just something that looks nice.</p>
+        <h3>Fast — online in days</h3>
+        <p>We get your website live in as little as 7 days. No waiting months. Your business starts showing up online right away.</p>
       </div>
       <div class="prop">
         <div class="prop-icon" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
-        <h3>SEO Built In</h3>
-        <p>Technical SEO, semantic markup, and local keyword targeting baked into every project from day one.</p>
+        <h3>Most affordable price</h3>
+        <p>We offer the lowest prices for professional websites in Seattle. If you find a better quote, we'll beat it — that's our promise.</p>
       </div>
       <div class="prop">
         <div class="prop-icon" aria-hidden="true">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg>
         </div>
-        <h3>Mobile-First</h3>
-        <p>60% of searches happen on phones. We build for that reality — fast and pixel-perfect everywhere.</p>
+        <h3>Looks great on all devices</h3>
+        <p>Your site works perfectly on phones, tablets, and computers. Most of your customers will find you on their phone.</p>
       </div>
       <div class="prop">
         <div class="prop-icon" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </div>
-        <h3>Converts Visitors</h3>
-        <p>Layouts structured around real customer psychology — turning traffic into calls and leads.</p>
+        <h3>Found on Google</h3>
+        <p>Every website we build is set up to appear in Google search. When someone looks for your type of business in Seattle, you show up.</p>
       </div>
     </div>
   </div>
@@ -154,71 +165,66 @@ import Layout from '../layouts/Layout.astro';
 <section class="services-section" id="services">
   <div class="wrap">
     <header class="sec-head">
-      <p class="label">What we do</p>
-      <h2>Services for Seattle small businesses</h2>
+      <p class="label">Our packages</p>
+      <h2>Simple, honest pricing for Seattle small businesses</h2>
     </header>
 
     <div class="svc-list">
       <article class="svc-row">
         <div class="svc-label">
           <span class="svc-num">01</span>
-          <h3>Website Design &amp; Development</h3>
+          <h3>Starter Website</h3>
         </div>
         <div class="svc-body">
-          <p>Custom websites for Seattle small businesses — built fast and clean. Not a template, not a page builder. A real website designed around your customers and optimized to rank.</p>
+          <p>Perfect if you just need to get online. A clean, professional website that tells customers who you are, what you do, and how to reach you. Simple and done right.</p>
           <ul class="svc-features">
-            <li>Custom design tailored to your brand</li>
-            <li>Responsive, mobile-first build</li>
-            <li>Performance-optimized code</li>
-            <li>Content management ready</li>
+            <li>Up to 3 pages (Home, About, Contact)</li>
+            <li>Mobile-friendly design</li>
+            <li>Google-ready from day one</li>
+            <li>Contact form &amp; phone number</li>
+            <li>Live in 5–7 days</li>
+            <li>Free domain setup</li>
           </ul>
         </div>
       </article>
       <article class="svc-row">
         <div class="svc-label">
           <span class="svc-num">02</span>
-          <h3>UI/UX Design</h3>
+          <h3>Business Website</h3>
         </div>
         <div class="svc-body">
-          <p>Good UX means fewer questions and more calls. We map how your customers actually navigate and design around that — reducing friction, improving clarity, and making the next step obvious.</p>
+          <p>Everything in Starter, plus more pages, a gallery of your work, and stronger Google presence. Ideal for businesses that want to stand out and get found by more customers in Seattle.</p>
           <ul class="svc-features">
-            <li>User flow mapping</li>
-            <li>Wireframes and prototypes</li>
-            <li>Conversion rate optimization</li>
-            <li>Accessibility compliance</li>
+            <li>Up to 6 pages</li>
+            <li>Photo gallery or portfolio</li>
+            <li>Local SEO setup for Seattle</li>
+            <li>Google Maps &amp; reviews integration</li>
+            <li>Social media links</li>
+            <li>Live in 7–10 days</li>
           </ul>
         </div>
       </article>
       <article class="svc-row">
         <div class="svc-label">
           <span class="svc-num">03</span>
-          <h3>SEO-Optimized Development</h3>
+          <h3>Growth Website</h3>
         </div>
         <div class="svc-body">
-          <p>Most agencies add SEO after the fact. We build with it in mind from day one — technical markup, structured data, local keyword targeting, and Core Web Vitals all handled before launch.</p>
+          <p>Built for businesses ready to grow. A fully custom website designed to bring in leads, rank higher on Google, and turn visitors into paying customers — all on autopilot.</p>
           <ul class="svc-features">
-            <li>Technical SEO foundation</li>
-            <li>On-page keyword integration</li>
-            <li>Local SEO for Seattle &amp; Pacific NW</li>
-            <li>Google Search Console setup</li>
+            <li>Unlimited pages</li>
+            <li>Full custom design</li>
+            <li>Advanced local SEO</li>
+            <li>Blog or news section</li>
+            <li>Lead capture forms</li>
+            <li>Ongoing support included</li>
           </ul>
         </div>
       </article>
-      <article class="svc-row">
-        <div class="svc-label">
-          <span class="svc-num">04</span>
-          <h3>Redesign &amp; Performance</h3>
-        </div>
-        <div class="svc-body">
-          <p>Your existing site isn't broken — it's just not working. We audit what's underperforming and fix it: speed, rankings, structure, conversions. Real improvements without starting from zero.</p>
-          <ul class="svc-features">
-            <li>Full site audit and analysis</li>
-            <li>Speed and Core Web Vitals fixes</li>
-            <li>SEO recovery and improvement</li>
-            <li>UX redesign and modernization</li>
-          </ul>
-        </div>
-      </article>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="#contact" class="btn btn-blue btn-lg">Get a free quote — no obligation</a>
     </div>
   </div>
 </section>
@@ -227,24 +233,24 @@ import Layout from '../layouts/Layout.astro';
 <section class="process-section" id="process">
   <div class="wrap">
     <header class="sec-head sec-head-inv">
-      <p class="label label-inv">How we work</p>
-      <h2>Clear process.<br>No surprises.</h2>
+      <p class="label label-inv">How it works</p>
+      <h2>Your website, live in days.<br>We handle everything.</h2>
     </header>
     <div class="process-grid">
       <div class="process-card">
         <span class="process-n" aria-hidden="true">1</span>
-        <h3>Discovery</h3>
-        <p>We learn your business, your customers, and what winning looks like for you. Then we dig into your Seattle market — competitor research, keyword mapping, the real opportunities.</p>
+        <h3>Tell us about your business</h3>
+        <p>We have a quick 20-minute call to understand your business, your customers, and what you need. No tech knowledge required — just tell us what you do.</p>
       </div>
       <div class="process-card">
         <span class="process-n" aria-hidden="true">2</span>
-        <h3>Design &amp; Build</h3>
-        <p>Every design and code decision is made with SEO and conversions already in mind. You review at every stage. Nothing ships without your sign-off.</p>
+        <h3>We build your website</h3>
+        <p>We design and build your site. You review it, give us feedback, and we make it exactly right. Nothing goes live until you love it.</p>
       </div>
       <div class="process-card">
         <span class="process-n" aria-hidden="true">3</span>
-        <h3>Launch &amp; Grow</h3>
-        <p>We submit to Google, wire up analytics, and watch the first few weeks closely. Your investment should start working immediately — and we make sure it does.</p>
+        <h3>Go live &amp; get found</h3>
+        <p>Your site goes live and we submit it to Google. Customers in Seattle start finding your business online — often within days of launch.</p>
       </div>
     </div>
   </div>
@@ -256,10 +262,10 @@ import Layout from '../layouts/Layout.astro';
     <div class="why-grid">
       <div class="why-left">
         <p class="label">Why Right Framework</p>
-        <h2>We know Seattle small business better than anyone</h2>
-        <p>We're not a marketplace, not an offshore shop, and not a generalist agency. We work with a small number of Pacific Northwest businesses at a time so we can actually pay attention.</p>
-        <p>That means you deal directly with the people building your site, and every decision is made with your specific market and customers in mind.</p>
-        <a href="#contact" class="btn btn-blue btn-lg" style="margin-top: 8px;">Start a conversation</a>
+        <h2>We exist for one reason: getting Seattle small businesses online</h2>
+        <p>We're not a big agency chasing corporate contracts. We're a local Seattle team that works only with small businesses who need their first website — or want a better one.</p>
+        <p>That means simple communication, honest pricing, and a team that actually cares about your business succeeding.</p>
+        <a href="#contact" class="btn btn-blue btn-lg" style="margin-top: 8px;">Talk to us today — it's free</a>
       </div>
       <div class="why-right">
         <div class="why-item">
@@ -267,8 +273,8 @@ import Layout from '../layouts/Layout.astro';
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <div>
-            <strong>Direct access, no account managers</strong>
-            <p>You work with the people writing your code, not a go-between.</p>
+            <strong>No confusing tech talk</strong>
+            <p>We explain everything in plain English. You'll always know what's happening and why.</p>
           </div>
         </div>
         <div class="why-item">
@@ -276,8 +282,8 @@ import Layout from '../layouts/Layout.astro';
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <div>
-            <strong>Pacific Northwest only</strong>
-            <p>We focus on Washington State businesses. That specificity shows in the results.</p>
+            <strong>Lowest price — guaranteed</strong>
+            <p>Show us any competitor's quote and we'll beat it. No fine print.</p>
           </div>
         </div>
         <div class="why-item">
@@ -285,8 +291,8 @@ import Layout from '../layouts/Layout.astro';
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <div>
-            <strong>SEO and design aren't two separate things</strong>
-            <p>We treat them as the same problem. Most studios don't.</p>
+            <strong>Seattle local focus</strong>
+            <p>We know Seattle neighborhoods, customers, and what works for businesses here.</p>
           </div>
         </div>
         <div class="why-item">
@@ -294,9 +300,14 @@ import Layout from '../layouts/Layout.astro';
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <div>
-            <strong>Measured by your results, not deliverables</strong>
-            <p>We track rankings, leads, and load times — not just "launched."</p>
+            <strong>We're with you after launch</strong>
+            <p>Need to update your hours, add a photo, or change something? Just ask us — we've got you.</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         </div>
       </div>
     </div>
@@ -307,8 +318,8 @@ import Layout from '../layouts/Layout.astro';
 <section class="work-section" id="work">
   <div class="wrap">
     <header class="sec-head">
-      <p class="label">Selected work</p>
-      <h2>Recent Pacific Northwest projects</h2>
+      <p class="label">Real websites we built</p>
+      <h2>Seattle &amp; local businesses we've helped get online</h2>
     </header>
 
     <!-- Filter tabs -->
@@ -368,16 +379,26 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </article>
 
-      <!-- Health & Wellness: Coming Soon -->
-      <article class="work-card work-card-soon" data-category="health">
-        <div class="work-soon-body">
-          <div class="soon-icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <!-- Health & Wellness: Attic AFH -->
+      <article class="work-card" data-category="health">
+        <div class="work-preview">
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://www.atticafh.com"
+              title="Attic AFH website preview"
+              loading="lazy"
+              scrolling="no"
+              tabindex="-1"
+              aria-hidden="true"
+            ></iframe>
           </div>
+          <a href="https://www.atticafh.com" target="_blank" rel="noopener" class="preview-overlay" aria-label="Visit Attic AFH website"></a>
+        </div>
+        <div class="work-info">
           <span class="work-tag">Health &amp; Wellness</span>
-          <h3>Project Coming Soon</h3>
-          <p>We're currently working on an exciting Health &amp; Wellness project. Check back soon to see the full case study.</p>
-          <span class="soon-badge">Coming Soon</span>
+          <h3>Attic AFH</h3>
+          <p>Health and wellness business website built for local visibility and customer trust. Clean, professional design that turns visitors into clients.</p>
+          <a href="https://www.atticafh.com" target="_blank" rel="noopener" class="btn btn-blue work-visit-btn">Visit Site &rarr;</a>
         </div>
       </article>
 
@@ -586,10 +607,10 @@ import Layout from '../layouts/Layout.astro';
   <div class="wrap">
     <div class="cta-inner">
       <div class="cta-text">
-        <h2>Ready to get more customers from your website?</h2>
-        <p>A free consultation takes 30 minutes. You'll leave with a clear picture of where your site stands and what's holding it back.</p>
+        <h2>Ready to get your Seattle business online?</h2>
+        <p>A free 20-minute call is all it takes to get started. We'll tell you exactly what you need, what it costs, and how fast we can get you live.</p>
       </div>
-      <a href="#contact" class="btn btn-white btn-lg cta-btn">Get a free consultation</a>
+      <a href="#contact" class="btn btn-white btn-lg cta-btn">Get a free quote today</a>
     </div>
   </div>
 </section>
@@ -599,8 +620,8 @@ import Layout from '../layouts/Layout.astro';
   <div class="wrap">
     <div class="contact-center">
       <p class="label" style="text-align:center;">Get in touch</p>
-      <h2 style="text-align:center;">Let's talk about your project</h2>
-      <p class="contact-sub">Choose how you'd like to connect — book a free 30-minute consultation call or send us a message.</p>
+      <h2 style="text-align:center;">Let's get your business online</h2>
+      <p class="contact-sub">Book a free 20-minute call and we'll give you an exact quote, or just send us a message. No tech knowledge needed — we make it easy.</p>
       <div class="contact-meta">
         <div class="contact-row">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -610,9 +631,9 @@ import Layout from '../layouts/Layout.astro';
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           contact@rightframework.tech
         </a>
-        <a class="contact-row contact-row-link" href="tel:+13014335323">
+        <a class="contact-row contact-row-link" href="tel:+15097313450">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          (301) 433-5323
+          (509) 731-3450
         </a>
       </div>
 
@@ -742,13 +763,13 @@ import Layout from '../layouts/Layout.astro';
 
       <!-- Col 1: Brand -->
       <div class="footer-brand">
-        <a href="/" class="logo" aria-label="Right Framework">
-          <svg class="logo-img" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M8 8h10a4 4 0 0 1 0 8H8V8z" fill="#fff"/><path d="M8 16h7l5 8h-4l-4-6.5V24H8V16z" fill="#fff"/></svg>
-          <span>Right Framework</span>
+        <a href="/" class="logo" aria-label="Right Framework Digital Agency">
+          <img src="/image copy.png" alt="Right Framework Digital Agency logo" class="logo-img footer-logo-img" width="160" height="160" />
+          <span>Right Framework Digital Inc.</span>
         </a>
-        <p class="footer-tagline">Seattle web design for Pacific Northwest small businesses.</p>
+        <p class="footer-tagline">Maximizing digital ROI for Seattle small businesses.</p>
         <p class="footer-company-name">Right Framework Digital Inc.</p>
-        <p class="footer-sub-tagline">A digital agency helping businesses grow online.</p>
+        <p class="footer-sub-tagline">Seattle's First Website Partner.</p>
         <div class="footer-socials" aria-label="Social media links">
           <a href="https://www.tiktok.com/@rightframework" target="_blank" rel="noopener" aria-label="TikTok">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
@@ -767,11 +788,10 @@ import Layout from '../layouts/Layout.astro';
 
       <!-- Col 2: Services (original) -->
       <div class="footer-col">
-        <h4>Services</h4>
-        <a href="#services">Website Design</a>
-        <a href="#services">UI/UX Design</a>
-        <a href="#services">SEO Optimization</a>
-        <a href="#services">Website Redesign</a>
+        <h4>Packages</h4>
+        <a href="#services">Starter Website</a>
+        <a href="#services">Business Website</a>
+        <a href="#services">Growth Website</a>
       </div>
 
       <!-- Col 3: Support -->
@@ -793,15 +813,15 @@ import Layout from '../layouts/Layout.astro';
 
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Right Framework</p>
-      <p>Seattle web design studio serving the Pacific Northwest</p>
+      <p>&copy; 2026 Right Framework Digital Inc.</p>
+      <p>The digital launchpad for Seattle's small business community.</p>
     </div>
   </div>
 
   <!-- Copyright bar -->
   <div class="footer-copyright">
     <div class="wrap">
-      <p>Copyright &copy; 2026 Right Framework Digital Inc. | Designed by <a href="https://rightframework.tech" target="_blank" rel="noopener">Right Framework</a> | <a href="/privacy-policy">Privacy Policy</a></p>
+      <p>Copyright &copy; 2026 Right Framework Digital Inc. | Seattle's First Website Partner | <a href="/privacy-policy">Privacy Policy</a></p>
     </div>
   </div>
 </footer>
@@ -810,16 +830,16 @@ import Layout from '../layouts/Layout.astro';
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Right Framework Digital Inc.",
+  "name": "Right Framework Digital Agency",
   "url": "https://www.rightframework.tech",
-  "description": "Seattle web design agency helping small businesses grow online",
+  "description": "Seattle's most affordable web design agency helping small businesses get their first website online",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Seattle",
     "addressRegion": "WA",
     "addressCountry": "US"
   },
-  "areaServed": "Seattle, WA and Pacific Northwest"
+  "areaServed": "Seattle, WA"
 }
 </script>
 
@@ -830,42 +850,42 @@ import Layout from '../layouts/Layout.astro';
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does Right Framework Digital Inc. do?",
+      "name": "How much does a website cost for a small business in Seattle?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Right Framework Digital Inc. is a Seattle-based web design agency that helps small businesses grow online through website design, SEO optimization, and digital marketing."
+        "text": "Right Framework offers the most affordable website packages in Seattle for small businesses. We have a price match guarantee — if you find a cheaper quote, we'll beat it. Contact us for a free quote."
       }
     },
     {
       "@type": "Question",
-      "name": "Where is Right Framework Digital located?",
+      "name": "How fast can Right Framework build my website?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Right Framework Digital Inc. is based in Seattle, WA serving small businesses across the Pacific Northwest."
+        "text": "Most websites are live within 5–10 days. Our Starter Website package can be online in as little as 5 days."
       }
     },
     {
       "@type": "Question",
-      "name": "How much does a website cost at Right Framework Digital?",
+      "name": "Do I need a website for my small business in Seattle?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Right Framework Digital Inc. offers custom website design packages for small businesses in Seattle starting at competitive rates. Contact us for a free quote."
+        "text": "Yes. Over 90% of customers search online before visiting a local business. Without a website, your competitors are getting those customers instead of you."
       }
     },
     {
       "@type": "Question",
-      "name": "What services does Right Framework Digital offer?",
+      "name": "What is Right Framework Digital Agency?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Right Framework Digital offers website design, UI/UX design, SEO optimization, and website redesign services for small businesses in Seattle and the Pacific Northwest."
+        "text": "Right Framework is a Seattle-based digital agency that helps small businesses get their first website online at the most affordable price in the market. We specialize in simple, fast, local-focused websites."
       }
     },
     {
       "@type": "Question",
-      "name": "Why choose Right Framework Digital for web design in Seattle?",
+      "name": "What packages does Right Framework offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Right Framework Digital combines local Seattle market knowledge with modern web design and SEO expertise to build sites that rank on Google and convert visitors into paying customers."
+        "text": "We offer three packages: Starter Website (3 pages, live in 5–7 days), Business Website (6 pages with local SEO), and Growth Website (unlimited pages, full custom design and ongoing support)."
       }
     }
   ]
@@ -890,22 +910,46 @@ import Layout from '../layouts/Layout.astro';
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  height: 120px;
 }
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 15px;
-  font-weight: 600;
+  gap: 4px;
   color: var(--ink);
   letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.logo-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.logo-motto {
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink-3);
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  white-space: nowrap;
 }
 .logo-img {
-  width: 32px;
-  height: 32px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
   flex-shrink: 0;
+  border-radius: 4px;
+}
+.footer-logo-img {
+  width: 120px !important;
+  height: 120px !important;
 }
 .logo-mark {
   width: 30px;
@@ -948,14 +992,19 @@ import Layout from '../layouts/Layout.astro';
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 100px;
   border: 1.5px solid var(--line);
   color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
   transition: background 0.15s, border-color 0.15s;
   margin-left: 4px;
 }
+.nav-call-label { font-size: 13px; font-weight: 600; }
 .nav-call:hover { background: var(--surface); border-color: var(--ink-4); }
 
 .burger {
@@ -994,6 +1043,13 @@ import Layout from '../layouts/Layout.astro';
 }
 .nav-drawer a:last-child { border-bottom: none; }
 .nav-drawer a:hover { color: var(--blue); }
+.drawer-call {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue) !important;
+  font-weight: 600 !important;
+}
 
 /* ── BUTTONS ─────────────────────────────────────────────── */
 .btn {
@@ -1089,6 +1145,19 @@ import Layout from '../layouts/Layout.astro';
   max-width: 440px;
 }
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-guarantee {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--ink-4);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.hero-guarantee::before {
+  content: '✓';
+  color: #16a34a;
+  font-weight: 700;
+}
 
 .hero-visual { position: relative; }
 .hero-frame {
@@ -1762,7 +1831,7 @@ import Layout from '../layouts/Layout.astro';
   padding-top: 18px;
   padding-bottom: 18px;
 }
-.footer-bottom p { font-size: 12.5px; color: var(--ink-4); }
+.footer-bottom p { font-size: 13px; color: var(--ink-4); }
 .footer-copyright {
   background: #ebebeb;
   border-top: 1px solid #e0e0e0;
@@ -1811,6 +1880,11 @@ import Layout from '../layouts/Layout.astro';
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .burger { display: flex; }
+
+  .nav-inner { height: 80px; }
+  .logo-img { width: 64px !important; height: 64px !important; }
+  .logo-name { font-size: 13px; }
+  .logo-motto { font-size: 9px; white-space: nowrap; }
 
   .hero { padding: 64px 0 72px; }
   .hero-grid { grid-template-columns: 1fr; gap: 0; }
